@@ -5,23 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- SEO Meta Tags -->
-  <title>Community of Voices — Bilingual Tutoring & Educational Equity in Hong Kong</title>
-  <meta name="description" content="Community of Voices (CoV) is a grassroots student-led coalition bridging the English learning gap for children of single mothers in Hong Kong using high-fidelity bilingual peer-tutoring and GoAsk technology.">
-  <meta name="keywords" content="Community of Voices, CoV, GoAsk, Bilingual Tutoring, Hong Kong NGO, Peer Tutoring, Educational Equity, Single Mothers HK">
+  <title>GoAsk NGO — Bilingual Tutoring & Educational Equity in Hong Kong</title>
+  <meta name="description" content="GoAsk NGO is a grassroots student-led coalition bridging the English learning gap for children of single mothers in Hong Kong using bilingual peer-tutoring and GoAsk technology.">
+  <meta name="keywords" content="GoAsk NGO, GoAsk, Bilingual Tutoring, Hong Kong NGO, Peer Tutoring, Educational Equity, Single Mothers HK">
   <meta name="author" content="Kyle Cheung">
   <link rel="canonical" href="https://community-of-voices.vercel.app/">
   
   <!-- OpenGraph Meta Tags (for Telegram, LinkedIn, Facebook) -->
-  <meta property="og:title" content="Community of Voices — Bilingual Tutoring & Educational Equity">
+  <meta property="og:title" content="GoAsk NGO — Bilingual Tutoring & Educational Equity">
   <meta property="og:description" content="Empowering children of single mothers in Hong Kong through Cantonese-scaffolded English tutoring and GoAsk AI safety nets.">
   <meta property="og:image" content="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1200&q=80">
   <meta property="og:url" content="https://community-of-voices.vercel.app/">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Community of Voices">
+  <meta property="og:site_name" content="GoAsk NGO">
   
   <!-- Twitter Card Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Community of Voices — Educational Equality">
+  <meta name="twitter:title" content="GoAsk NGO — Educational Equality">
   <meta name="twitter:description" content="Bilingual peer-tutoring bridging the English learning gap for children of single mothers in Hong Kong.">
   <meta name="twitter:image" content="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1200&q=80">
 
@@ -43,13 +43,14 @@
           },
           colors: {
             brand: {
-              cream: '#faf9f6',
-              dark: '#1f2421',
-              green: '#2a4b3a',
-              sage: '#8ea89d',
-              gold: '#c5a059',
-              border: '#e3dfd5',
-              muted: '#666a65',
+              cream: '#faf8f5', // ultra-soft light warm cream
+              beige: '#f4efe4', // primary warm editorial beige
+              dark: '#2d2621', // deep espresso charcoal for high contrast warmth
+              green: '#223c2a', // deep rich forest green
+              sage: '#849d8c', // warm sage green
+              gold: '#b68e42', // sophisticated dark gold
+              border: '#dfd6be', // beautiful warm sandy border
+              muted: '#6d645d', // warm muted bronze-grey
             }
           }
         }
@@ -73,46 +74,47 @@
     }
 
     body {
-      background-color: #faf9f6;
-      color: #1f2421;
+      background-color: #f4efe4; /* Default to primary brand.beige */
+      color: #2d2621;
     }
     .frosted {
-      background: rgba(250, 249, 246, 0.85);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
+      background: rgba(255, 255, 255, 0.45) !important; /* Stunning light translucent glass */
+      backdrop-filter: blur(20px) !important;
+      -webkit-backdrop-filter: blur(20px) !important;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.02);
     }
     .thin-border {
-      border-color: #e3dfd5;
+      border-color: #dfd6be;
     }
     .editorial-shadow {
-      box-shadow: 0 4px 30px rgba(42, 75, 58, 0.02);
+      box-shadow: 0 4px 30px rgba(34, 60, 42, 0.02);
     }
   </style>
 </head>
 <body class="font-sans antialiased selection:bg-brand-green selection:text-white text-brand-muted">
 
   <!-- Header / Navigation -->
-  <header class="fixed top-0 left-0 right-0 z-50 frosted border-b border-brand-border transition-all duration-300">
+  <header class="fixed top-0 left-0 right-0 z-50 frosted border-b border-white/50 transition-all duration-300">
     <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
       <a href="#" class="flex items-center space-x-2 group">
         <span class="font-serif text-2xl font-normal tracking-tight text-brand-dark group-hover:text-brand-green transition-colors">
-          Community <span class="italic font-light">of Voices</span>
+          GoAsk <span class="italic font-light">NGO</span>
         </span>
       </a>
       
       <nav class="hidden md:flex items-center space-x-8 text-xs font-semibold uppercase tracking-wider text-brand-muted">
-        <a href="#gap" class="hover:text-brand-dark transition-colors">The Social Gap</a>
+        <a href="#gap" class="hover:text-brand-dark transition-colors">Why We Are Here</a>
         <a href="#pedagogy" class="hover:text-brand-dark transition-colors">Bilingual Pedagogy</a>
-        <a href="#work" class="hover:text-brand-dark transition-colors">Actual Work & Evidence</a>
+        <a href="#work" class="hover:text-brand-dark transition-colors">Our Journey</a>
         <a href="#coalition" class="hover:text-brand-dark transition-colors">The Coalition</a>
-        <a href="#partnership" class="hover:text-brand-dark transition-colors">Join Alliance</a>
+        <a href="#partnership" class="hover:text-brand-dark transition-colors">Join Us</a>
       </nav>
 
       <div class="flex items-center space-x-4">
-        <a href="#partnership" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 text-xs font-bold uppercase tracking-wider text-brand-dark hover:bg-brand-dark hover:text-white rounded border border-brand-dark transition-colors">
+        <a href="#partnership" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 text-xs font-bold uppercase tracking-wider text-brand-dark border border-brand-dark/20 hover:bg-brand-dark hover:text-brand-cream rounded transition-colors">
           Volunteer Login
         </a>
-        <a href="#partnership" class="inline-flex items-center justify-center px-5 py-2.5 text-xs font-bold uppercase tracking-wider text-white bg-brand-green hover:bg-brand-dark rounded transition-all">
+        <a href="#partnership" class="inline-flex items-center justify-center px-5 py-2.5 text-xs font-bold uppercase tracking-wider text-white bg-brand-green hover:bg-brand-sage rounded transition-all">
           Request Partner Link
         </a>
       </div>
@@ -120,54 +122,54 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="relative min-h-screen pt-36 pb-20 flex items-center justify-start overflow-hidden bg-cover bg-center" style="background-image: url('images/work/volunteer_classroom.jpg');">
-    <!-- Sophisticated cinematic gradient overlay: dark on the left (for text contrast), transparent on the right (to showcase the sharp classroom photo) -->
-    <div class="absolute inset-0 bg-gradient-to-r from-[#1f2421]/95 via-[#1f2421]/60 to-transparent z-0"></div>
+  <section class="relative min-h-screen pt-36 pb-20 flex items-center justify-start overflow-hidden bg-cover bg-center" style="background-image: url('/images/work/volunteer_classroom.jpg');">
+    <!-- Sophisticated cinematic gradient overlay: rich beige on the left (for dark text contrast), translucent to transparent on the right (to showcase the sharp classroom photo) -->
+    <div class="absolute inset-0 bg-gradient-to-r from-brand-beige via-brand-beige/85 to-transparent z-0"></div>
     
     <div class="max-w-6xl mx-auto px-6 relative z-10 w-full grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
       
-      <!-- Text and Metrics Left-Aligned Column (Occupies 7 out of 12 columns, leaving the right side wide open) -->
+      <!-- Text and Metrics Left-Aligned Column -->
       <div class="lg:col-span-7 space-y-8 text-left flex flex-col items-start">
         
         <!-- Award Badge -->
-        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-[#8ea89d] text-xs font-semibold uppercase tracking-wider">
+        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-brand-green/10 border border-brand-green/20 text-brand-green text-xs font-semibold uppercase tracking-wider">
           <span>🏆 SWD Silver Volunteer Award Recipient</span>
         </div>
         
         <!-- Headline -->
-        <h1 class="text-6xl sm:text-7xl md:text-8xl font-light tracking-tight text-white leading-[1.05] font-serif">
-          Bilingual Scaffolding. <br>
-          <span class="italic font-light text-[#8ea89d]">Educational Equity.</span>
+        <h1 class="text-6xl sm:text-7xl md:text-8xl font-light tracking-tight text-brand-dark leading-[1.05] font-serif">
+          Helping Kids Learn. <br>
+          <span class="italic font-light text-brand-green">Bridging the Gap.</span>
         </h1>
         
         <!-- Description -->
-        <p class="text-base sm:text-lg text-white/90 max-w-xl leading-relaxed font-light">
-          We do not believe in passive charity. <strong class="text-white font-medium">Community of Voices</strong> is a grassroots, peer-led coalition that bridges the English learning gap for children of single mothers in Hong Kong using high-fidelity bilingual tutoring and on-demand GoAsk technology.
+        <p class="text-base sm:text-lg text-brand-muted max-w-xl leading-relaxed font-light">
+          Learning English shouldn't be a struggle. We are a friendly team of student volunteers helping kids in Hong Kong master English through clear Cantonese explanations and free learning apps.
         </p>
 
         <!-- CTA Buttons -->
         <div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
-          <a href="#partnership" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 text-sm font-semibold text-[#1f2421] bg-white hover:bg-[#8ea89d] rounded transition-all">
-            Apply to Join the Coalition
+          <a href="#partnership" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 text-sm font-semibold text-white bg-brand-green hover:bg-brand-sage rounded transition-all shadow-md">
+            Join as a Volunteer Tutor
           </a>
-          <a href="#gap" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 text-sm font-semibold text-white bg-transparent border border-white/30 hover:border-white rounded transition-colors">
-            View Pedagogy Details
+          <a href="#gap" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 text-sm font-semibold text-brand-dark bg-transparent border border-brand-dark/25 hover:bg-brand-border/40 hover:border-brand-dark/40 rounded transition-colors">
+            How We Help Kids
           </a>
         </div>
 
         <!-- Metrics -->
-        <div class="grid grid-cols-3 gap-8 pt-8 border-t border-white/15 text-left w-full max-w-md">
+        <div class="grid grid-cols-3 gap-8 pt-8 border-t border-brand-border text-left w-full max-w-md">
           <div>
-            <div class="text-3xl font-normal font-serif text-white">100+</div>
-            <div class="text-[10px] text-white/70 mt-1 uppercase tracking-wider font-mono">Bilingual Hours</div>
+            <div class="text-3xl font-normal font-serif text-brand-green">100+</div>
+            <div class="text-[10px] text-brand-muted mt-1 uppercase tracking-wider font-mono">Tutoring Hours</div>
           </div>
           <div>
-            <div class="text-3xl font-normal font-serif text-white">20+</div>
-            <div class="text-[10px] text-white/70 mt-1 uppercase tracking-wider font-mono">Active Tutors</div>
+            <div class="text-3xl font-normal font-serif text-brand-green">20+</div>
+            <div class="text-[10px] text-brand-muted mt-1 uppercase tracking-wider font-mono">Student Tutors</div>
           </div>
           <div>
-            <div class="text-3xl font-normal font-serif text-white">5 Schools</div>
-            <div class="text-[10px] text-white/70 mt-1 uppercase tracking-wider font-mono">In Coalition</div>
+            <div class="text-3xl font-normal font-serif text-brand-green">5 Schools</div>
+            <div class="text-[10px] text-brand-muted mt-1 uppercase tracking-wider font-mono">Collaborating</div>
           </div>
         </div>
 
@@ -180,13 +182,13 @@
   </section>
 
   <!-- The Gap (About the Problem) -->
-  <section id="gap" class="py-24 bg-white border-y border-brand-border relative">
+  <section id="gap" class="py-24 bg-brand-cream border-y border-brand-border relative">
     <div class="max-w-6xl mx-auto px-6">
       <div class="max-w-2xl space-y-4 mb-20">
-        <h2 class="text-xs font-semibold text-brand-accent uppercase tracking-wider font-mono">The Social Reality</h2>
-        <p class="text-4xl font-light text-brand-dark tracking-tight font-serif">Bridging the homework divide.</p>
+        <h2 class="text-xs font-semibold text-brand-green uppercase tracking-wider font-mono">Why We Are Here</h2>
+        <p class="text-4xl font-light text-brand-dark tracking-tight font-serif">Making sure no child struggles alone after school.</p>
         <p class="text-brand-muted font-light leading-relaxed text-sm">
-          Traditional charity models believe donation boxes solve educational inequality. The reality on the ground is different. Underprivileged children of single mothers face a complex, dual barrier: severe time poverty and linguistic isolation.
+          Every child deserves help with their homework. But many single mothers in Hong Kong work long hours to support their families, leaving children with no one at home who can guide them through English assignments. We are here to bridge that gap.
         </p>
       </div>
 
@@ -197,9 +199,9 @@
           <div class="w-10 h-10 rounded-full border border-brand-border flex items-center justify-center font-serif text-brand-green text-lg">
             I
           </div>
-          <h3 class="text-lg font-medium text-brand-dark">Time Poverty</h3>
+          <h3 class="text-lg font-medium text-brand-dark">Busy Parents</h3>
           <p class="text-brand-muted text-xs font-light leading-relaxed">
-            Single mothers in Hong Kong frequently work twelve-hour shifts to sustain their families. They are rarely home during after-school study hours, leaving children entirely unguided through complex homework.
+            Many single mothers in Hong Kong work 12-hour shifts. Because they are working during after-school study hours, children are often left to face complicated English homework on their own.
           </p>
         </div>
 
@@ -208,9 +210,9 @@
           <div class="w-10 h-10 rounded-full border border-brand-border flex items-center justify-center font-serif text-brand-green text-lg">
             II
           </div>
-          <h3 class="text-lg font-medium text-brand-dark">The Language Wall</h3>
+          <h3 class="text-lg font-medium text-brand-dark">The Language Barrier</h3>
           <p class="text-brand-muted text-xs font-light leading-relaxed">
-            Local curricula demand fluent English output, yet single mothers often lack the English proficiency required to help. Bright students fall behind simply because they lack bilingual explanations at home.
+            School curriculums require kids to write and speak fluent English. But parents who didn't grow up speaking English can't always help. We explain English grammar in Cantonese so kids actually understand.
           </p>
         </div>
 
@@ -219,9 +221,9 @@
           <div class="w-10 h-10 rounded-full border border-brand-border flex items-center justify-center font-serif text-brand-green text-lg">
             III
           </div>
-          <h3 class="text-lg font-medium text-brand-dark">Structural Fragility</h3>
+          <h3 class="text-lg font-medium text-brand-dark">A Helping Hand That Lasts</h3>
           <p class="text-brand-muted text-xs font-light leading-relaxed">
-            Uncoordinated volunteer operations collapse during school breaks or exam seasons. CoV resolves this by mobilizing a deep bench of peer-tutors from international schools, backed by GoAsk's 24/7 digital safety net.
+            Many volunteer programs stop during exam periods or holidays. We have a dedicated team of student tutors from international schools, backed by free learning software so kids get help 24/7.
           </p>
         </div>
 
@@ -230,32 +232,32 @@
   </section>
 
   <!-- The Pedagogy (Bilingual Scaffolding Explained) -->
-  <section id="pedagogy" class="py-24 relative overflow-hidden bg-[#faf9f6]">
+  <section id="pedagogy" class="py-24 relative overflow-hidden bg-brand-beige">
     <div class="max-w-6xl mx-auto px-6">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
         
         <!-- Text details -->
         <div class="lg:col-span-6 space-y-8">
-          <span class="text-xs font-semibold text-brand-green uppercase tracking-wider font-mono">Our Methodology</span>
-          <h3 class="text-4xl font-light text-brand-dark tracking-tight font-serif leading-tight">The Bilingual Scaffolding Model</h3>
+          <span class="text-xs font-semibold text-brand-green uppercase tracking-wider font-mono">Our Easy Learning Method</span>
+          <h3 class="text-4xl font-light text-brand-dark tracking-tight font-serif leading-tight">We Explain English in Cantonese</h3>
           <p class="text-brand-muted text-sm font-light leading-relaxed">
-            English-only tutoring confuses students who lack a linguistic baseline. Cantonese-only translation fails to produce English fluency. 
+            Tutoring only in English can be super confusing for beginners. But simply translating words into Cantonese doesn't build long-term fluency either.
           </p>
           <p class="text-brand-muted text-sm font-light leading-relaxed">
-            Our student-led tutors enforce a <strong class="text-brand-dark font-medium">"Cantonese-Explanation, English-Output"</strong> pedagogy. We explain abstract English syntax inside their mother tongue, then immediately practice English output, allowing natural comprehension.
+            That's why we explain grammar clearly in Cantonese first, then immediately practice writing and speaking in English. This makes learning natural, fun, and easy!
           </p>
 
           <div class="space-y-4">
             <div class="p-5 rounded-xl bg-white border border-brand-border space-y-2">
-              <h4 class="text-xs font-mono text-brand-dark uppercase">The Tutoring Scaffold:</h4>
+              <h4 class="text-xs font-mono text-brand-dark uppercase">Easy Tutoring Steps:</h4>
               <p class="text-xs text-brand-muted font-light leading-relaxed">
-                Tutor breaks down grammar in Cantonese $\rightarrow$ Student builds mental map $\rightarrow$ Student executes worksheet in English $\rightarrow$ Success validated.
+                We explain grammar in Cantonese → The student understands the concept → We practice worksheets together in English → Success!
               </p>
             </div>
             <div class="p-5 rounded-xl bg-white border border-brand-border space-y-2">
-              <h4 class="text-xs font-mono text-brand-dark uppercase">GoAsk AI Integration:</h4>
+              <h4 class="text-xs font-mono text-brand-dark uppercase">Free Learning App (GoAsk):</h4>
               <p class="text-xs text-brand-muted font-light leading-relaxed">
-                When tutors are not present, our students use their free GoAsk software licenses. They can submit English homework questions and receive automated, localized Cantonese explanations 24/7.
+                When tutors aren't around, kids can use our free GoAsk learning app on their phones. They just take a picture of their homework and get clear Cantonese explanations instantly 24/7.
               </p>
             </div>
           </div>
@@ -266,7 +268,7 @@
           <div class="bg-white border border-brand-border p-6 rounded-2xl shadow-xl max-w-[400px] w-full relative">
             <span class="text-[10px] font-mono text-brand-muted uppercase tracking-wider">Interactive GoAsk Scaffolding Simulator</span>
             
-            <div class="mt-4 bg-[#faf9f6] p-4 rounded-xl border border-brand-border space-y-4 min-h-[300px] flex flex-col justify-between">
+            <div class="mt-4 bg-brand-cream p-4 rounded-xl border border-brand-border space-y-4 min-h-[300px] flex flex-col justify-between">
               <div class="space-y-3">
                 <div class="flex items-start space-x-2">
                   <div class="w-6 h-6 rounded-full bg-brand-green/20 flex items-center justify-center font-bold text-[10px] text-brand-green">S</div>
@@ -313,13 +315,13 @@
   </section>
 
   <!-- THE ACTUAL WORK SHOWCASE (NO SLOP - HIGH FIDELITY LAYOUTS & TABLES) -->
-  <section id="work" class="py-24 bg-white border-y border-brand-border relative">
+  <section id="work" class="py-24 bg-brand-cream border-y border-brand-border relative">
     <div class="max-w-6xl mx-auto px-6">
       <div class="text-center max-w-3xl mx-auto space-y-4 mb-20">
-        <h2 class="text-xs font-semibold text-brand-accent uppercase tracking-wider font-mono">The Action Records</h2>
-        <p class="text-4xl font-light text-brand-dark tracking-tight font-serif">Actual Service & System Logs</p>
+        <h2 class="text-xs font-semibold text-brand-green uppercase tracking-wider font-mono">Our Journey & Impact</h2>
+        <p class="text-4xl font-light text-brand-dark tracking-tight font-serif">How We Make It Happen</p>
         <p class="text-brand-muted font-light leading-relaxed">
-          Our NGO is defined by our actual accomplishments, logged tutoring hours, and active school integrations. We maintain transparent logs of our grassroots volunteer sessions.
+          We believe in real action and transparent progress. From organizing volunteers to setting up free apps for families, here is how we systematically run our tutoring program.
         </p>
       </div>
 
@@ -329,7 +331,7 @@
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
         
         <!-- Left: Structured Table of Service -->
-        <div class="lg:col-span-8 bg-[#faf9f6] border border-brand-border rounded-2xl p-6 md:p-8">
+        <div class="lg:col-span-8 bg-brand-beige/50 border border-brand-border rounded-2xl p-6 md:p-8">
           <div class="border-b border-brand-border pb-4 mb-6">
             <h4 class="text-xl font-normal font-serif text-brand-dark">The Table of Service</h4>
             <p class="text-xs text-brand-muted mt-1 font-mono">Systematic Action Stages (CoV Program)</p>
@@ -370,13 +372,13 @@
         </div>
 
         <!-- Right: Official Recognition & Certificate -->
-        <div class="lg:col-span-4 bg-[#faf9f6] border border-brand-border rounded-2xl p-6 text-center space-y-6 flex flex-col justify-between">
+        <div class="lg:col-span-4 bg-brand-beige/50 border border-brand-border rounded-2xl p-6 text-center space-y-6 flex flex-col justify-between">
           <div class="space-y-4">
             <span class="text-[10px] font-mono text-brand-muted uppercase tracking-wider block">Official Validation</span>
             
             <!-- Real Certificate Display -->
             <div class="border border-brand-border bg-white p-2 rounded-xl shadow-sm relative overflow-hidden group">
-              <img src="images/work/volunteer_award_cert.png" alt="Hong Kong Volunteer Award 2025 Certificate" class="w-full h-auto rounded object-contain hover:scale-[1.02] transition-transform duration-300">
+              <img src="/images/work/volunteer_award_cert.png" alt="Hong Kong Volunteer Award 2025 Certificate" class="w-full h-auto rounded object-contain hover:scale-[1.02] transition-transform duration-300">
             </div>
           </div>
 
@@ -394,13 +396,13 @@
   </section>
 
   <!-- Coalition & Alliances -->
-  <section id="coalition" class="py-24 relative overflow-hidden">
+  <section id="coalition" class="py-24 relative overflow-hidden bg-brand-beige">
     <div class="max-w-6xl mx-auto px-6">
       <div class="text-center max-w-3xl mx-auto space-y-4 mb-20">
         <h2 class="text-xs font-semibold text-brand-green uppercase tracking-wider font-mono">The Alliance</h2>
         <p class="text-3xl sm:text-4xl font-extrabold text-brand-dark tracking-tight font-serif">Our Cross-School Coalition</p>
         <p class="text-brand-muted font-light leading-relaxed">
-          Community of Voices unites student advocates and institutions across Hong Kong to deliver reliable, structured educational equity.
+          GoAsk NGO unites student advocates and institutions across Hong Kong to deliver reliable, structured educational equity.
         </p>
       </div>
 
@@ -430,27 +432,27 @@
       <!-- Strategic Partner -->
       <div class="mt-12 p-8 rounded-2xl bg-gradient-to-r from-brand-green/5 to-transparent border border-brand-green/20 flex flex-col md:flex-row items-center justify-between gap-6">
         <div class="space-y-2 text-center md:text-left">
-          <span class="text-xs font-mono text-brand-green uppercase tracking-wider">Strategic Educational Partner</span>
-          <h4 class="text-xl font-bold text-brand-dark font-serif">CUHK-Affiliated Innovations</h4>
+          <span class="text-xs font-mono text-brand-green uppercase tracking-wider">Our Tech Ally</span>
+          <h4 class="text-xl font-bold text-brand-dark font-serif">Technology Partnerships</h4>
           <p class="text-xs text-brand-muted max-w-xl font-light leading-relaxed">
-            We operate in strategic licensing partnership with a CUHK-affiliated educational enterprise, securing deep discounts and grants to distribute hundreds of GoAsk AI platform keys to underprivileged communities.
+            We partner with a local university-affiliated tech team to secure heavily discounted software licenses. This allows us to distribute hundreds of free GoAsk learning app keys directly to underfunded households.
           </p>
         </div>
         <div class="shrink-0 font-bold text-sm text-brand-dark border border-brand-dark px-6 py-3 rounded bg-white">
-          CUHK Tech Partner
+          Tech Partner
         </div>
       </div>
     </div>
   </section>
 
   <!-- Interactive Partnership Form -->
-  <section id="partnership" class="py-24 bg-brand-panel border-t border-brand-border relative">
+  <section id="partnership" class="py-24 bg-brand-cream border-t border-brand-border relative">
     <div class="max-w-4xl mx-auto px-6">
       <div class="text-center space-y-4 mb-16">
-        <h2 class="text-xs font-semibold text-brand-green uppercase tracking-wider font-mono">Formalization Portal</h2>
-        <p class="text-3xl sm:text-4xl font-extrabold text-brand-dark tracking-tight font-serif">Request Strategic Partnership</p>
+        <h2 class="text-xs font-semibold text-brand-green uppercase tracking-wider font-mono">Join the Family</h2>
+        <p class="text-3xl sm:text-4xl font-extrabold text-brand-dark tracking-tight font-serif">Get Involved & Help Us Grow</p>
         <p class="text-brand-muted text-sm font-light leading-relaxed max-w-xl mx-auto">
-          Are you a school coordinator, community center representative, or technology ally? Complete this secure form to join our structural alliance, coordinate tutor deployments, or request free GoAsk student licenses.
+          Are you a high schooler who wants to tutor, a community center looking for tutoring classes, or an educator who wants to support us? Fill out this quick form to get in touch and start working with us!
         </p>
       </div>
 
@@ -460,42 +462,42 @@
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <label for="contact-name" class="block text-xs font-mono text-brand-muted uppercase tracking-wider mb-2">Full Name</label>
-              <input type="text" id="contact-name" required class="w-full bg-[#faf9f6] border border-brand-border focus:border-brand-green rounded px-4 py-3 text-sm text-brand-dark focus:outline-none transition-colors" placeholder="e.g. Eryao Wong">
+              <input type="text" id="contact-name" required class="w-full bg-brand-cream border border-brand-border focus:border-brand-green rounded px-4 py-3 text-sm text-brand-dark focus:outline-none transition-colors" placeholder="e.g. Eryao Wong">
             </div>
             <div>
               <label for="contact-email" class="block text-xs font-mono text-brand-muted uppercase tracking-wider mb-2">Email Address</label>
-              <input type="email" id="contact-email" required class="w-full bg-[#faf9f6] border border-brand-border focus:border-brand-green rounded px-4 py-3 text-sm text-brand-dark focus:outline-none transition-colors" placeholder="e.g. contact@organisation.org">
+              <input type="email" id="contact-email" required class="w-full bg-brand-cream border border-brand-border focus:border-brand-green rounded px-4 py-3 text-sm text-brand-dark focus:outline-none transition-colors" placeholder="e.g. contact@organisation.org">
             </div>
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <label for="institution" class="block text-xs font-mono text-brand-muted uppercase tracking-wider mb-2">Institution Name</label>
-              <input type="text" id="institution" required class="w-full bg-[#faf9f6] border border-brand-border focus:border-brand-green rounded px-4 py-3 text-sm text-brand-dark focus:outline-none transition-colors" placeholder="e.g. Stamford American School">
+              <label for="institution" class="block text-xs font-mono text-brand-muted uppercase tracking-wider mb-2">School or Organization</label>
+              <input type="text" id="institution" required class="w-full bg-brand-cream border border-brand-border focus:border-brand-green rounded px-4 py-3 text-sm text-brand-dark focus:outline-none transition-colors" placeholder="e.g. Stamford American School">
             </div>
             <div>
-              <label for="role-type" class="block text-xs font-mono text-brand-muted uppercase tracking-wider mb-2">Partnership Class</label>
-              <select id="role-type" class="w-full bg-[#faf9f6] border border-brand-border focus:border-brand-green rounded px-4 py-3 text-sm text-brand-dark focus:outline-none transition-colors">
-                <option value="school">International School Coalition</option>
-                <option value="center">Local Community Center</option>
-                <option value="corporate">Corporate Tech Partner (Sponsor)</option>
-                <option value="mentor">Educational Mentor / Researcher</option>
+              <label for="role-type" class="block text-xs font-mono text-brand-muted uppercase tracking-wider mb-2">How would you like to join?</label>
+              <select id="role-type" class="w-full bg-brand-cream border border-brand-border focus:border-brand-green rounded px-4 py-3 text-sm text-brand-dark focus:outline-none transition-colors">
+                <option value="school">Join as a Student Tutor (High School)</option>
+                <option value="center">Partner Community Center (Hong Kong)</option>
+                <option value="corporate">Become a Sponsor or Tech Partner</option>
+                <option value="mentor">Volunteer Teacher or Academic Advisor</option>
               </select>
             </div>
           </div>
 
           <div>
-            <label for="proposal-desc" class="block text-xs font-mono text-brand-muted uppercase tracking-wider mb-2">Partnership Objective / Proposal</label>
-            <textarea id="proposal-desc" rows="4" required class="w-full bg-[#faf9f6] border border-brand-border focus:border-brand-green rounded px-4 py-3 text-sm text-brand-dark focus:outline-none transition-colors" placeholder="Briefly describe your objectives, needed student licenses, or proposed volunteer support framework..."></textarea>
+            <label for="proposal-desc" class="block text-xs font-mono text-brand-muted uppercase tracking-wider mb-2">How can we work together?</label>
+            <textarea id="proposal-desc" rows="4" required class="w-full bg-brand-cream border border-brand-border focus:border-brand-green rounded px-4 py-3 text-sm text-brand-dark focus:outline-none transition-colors" placeholder="Briefly tell us how you'd like to help, if you need free student apps for your center, or any questions you have..."></textarea>
           </div>
 
           <!-- Hidden Honeypot for simple spam protection -->
           <input type="text" id="spam-check" class="hidden">
 
           <div class="flex items-center justify-between pt-4 border-t border-brand-border">
-            <p class="text-xs text-brand-muted font-mono">🔒 Secure encrypted TLS channel</p>
+            <p class="text-xs text-brand-muted font-mono">🔒 Secure encrypted connection</p>
             <button type="submit" id="submit-btn" class="px-6 py-3 text-xs font-semibold text-white bg-brand-green hover:bg-brand-dark rounded transition-all">
-              Transmit Proposal
+              Send Message
             </button>
           </div>
         </form>
@@ -505,12 +507,12 @@
           <div class="w-14 h-14 rounded-full border border-brand-sage flex items-center justify-center text-brand-sage text-2xl font-bold">
             ✓
           </div>
-          <h3 class="text-2xl font-light text-brand-dark font-serif">Proposal Transmitted</h3>
+          <h3 class="text-2xl font-light text-brand-dark font-serif">Message Sent!</h3>
           <p class="text-brand-muted text-xs max-w-sm font-light leading-relaxed">
-            Your strategic partnership request has been securely logged and indexed into the Community of Voices (CoV) database. Our administrative leads will review the operational bounds and reach out within 48 business hours.
+            Thank you! Your request has been securely saved in our Community of Voices database. Our team will review your message and reach out to you within 48 hours.
           </p>
           <button onclick="resetForm()" class="px-5 py-2 text-xs font-semibold text-brand-dark hover:bg-brand-dark hover:text-white border border-brand-border rounded transition-colors">
-            Submit Another Proposal
+            Send Another Message
           </button>
         </div>
 
@@ -519,10 +521,10 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-[#faf9f6] border-t border-brand-border py-16 text-xs text-brand-muted">
+  <footer class="bg-brand-beige border-t border-brand-border py-16 text-xs text-brand-muted">
     <div class="max-w-6xl mx-auto px-6 space-y-6">
       <div class="flex flex-col sm:flex-row items-center justify-between gap-6 border-b border-brand-border pb-12">
-        <span class="font-serif text-2xl text-brand-dark">Community <span class="italic font-light">of Voices</span></span>
+        <span class="font-serif text-2xl text-brand-dark">GoAsk <span class="italic font-light">NGO</span></span>
         <div class="flex items-center space-x-8">
           <a href="#gap" class="hover:text-brand-dark transition-colors">Social Gap</a>
           <a href="#pedagogy" class="hover:text-brand-dark transition-colors">Pedagogy</a>
@@ -531,7 +533,7 @@
         </div>
       </div>
       <div class="flex flex-col sm:flex-row items-center justify-between text-brand-muted gap-4">
-        <p>&copy; 2026 Community of Voices. All rights reserved.</p>
+        <p>&copy; 2026 GoAsk NGO. All rights reserved.</p>
         <p class="font-mono">Secure Node: desktop-j70mh4o • OpenClaw Gateway Connected</p>
       </div>
     </div>
@@ -601,7 +603,7 @@
       try {
         const id = core.id();
         await db.transact(
-          db.tx.cov_proposals[id].update({
+          db.tx.goask_proposals[id].update({
             ...data,
             createdAt: Date.now()
           })
