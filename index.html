@@ -43,14 +43,13 @@
           },
           colors: {
             brand: {
-              cream: '#faf8f5', // ultra-soft light warm cream
-              beige: '#f4efe4', // primary warm editorial beige
-              dark: '#2d2621', // deep espresso charcoal for high contrast warmth
-              green: '#223c2a', // deep rich forest green
-              sage: '#849d8c', // warm sage green
-              gold: '#b68e42', // sophisticated dark gold
-              border: '#dfd6be', // beautiful warm sandy border
-              muted: '#6d645d', // warm muted bronze-grey
+              cream: '#faf9f6',
+              dark: '#1f2421',
+              green: '#2a4b3a',
+              sage: '#8ea89d',
+              gold: '#c5a059',
+              border: '#e3dfd5',
+              muted: '#666a65',
             }
           }
         }
@@ -74,20 +73,20 @@
     }
 
     body {
-      background-color: #f4efe4; /* Default to primary brand.beige */
-      color: #2d2621;
+      background-color: #faf9f6;
+      color: #1f2421;
     }
     .frosted {
-      background: rgba(255, 255, 255, 0.45) !important; /* Stunning light translucent glass */
+      background: rgba(255, 255, 255, 0.45) !important; /* Premium clear glassmorphism */
       backdrop-filter: blur(20px) !important;
       -webkit-backdrop-filter: blur(20px) !important;
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.02);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
     }
     .thin-border {
-      border-color: #dfd6be;
+      border-color: #e3dfd5;
     }
     .editorial-shadow {
-      box-shadow: 0 4px 30px rgba(34, 60, 42, 0.02);
+      box-shadow: 0 4px 30px rgba(42, 75, 58, 0.02);
     }
   </style>
 </head>
@@ -111,10 +110,10 @@
       </nav>
 
       <div class="flex items-center space-x-4">
-        <a href="#partnership" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 text-xs font-bold uppercase tracking-wider text-brand-dark border border-brand-dark/20 hover:bg-brand-dark hover:text-brand-cream rounded transition-colors">
+        <a href="#partnership" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 text-xs font-bold uppercase tracking-wider text-brand-dark hover:bg-brand-dark hover:text-white rounded border border-brand-dark transition-colors">
           Volunteer Login
         </a>
-        <a href="#partnership" class="inline-flex items-center justify-center px-5 py-2.5 text-xs font-bold uppercase tracking-wider text-white bg-brand-green hover:bg-brand-sage rounded transition-all">
+        <a href="#partnership" class="inline-flex items-center justify-center px-5 py-2.5 text-xs font-bold uppercase tracking-wider text-white bg-brand-green hover:bg-brand-dark rounded transition-all">
           Request Partner Link
         </a>
       </div>
@@ -122,54 +121,54 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="relative min-h-screen pt-36 pb-20 flex items-center justify-start overflow-hidden bg-cover bg-center" style="background-image: url('/images/work/volunteer_classroom.jpg');">
-    <!-- Sophisticated cinematic gradient overlay: rich beige on the left (for dark text contrast), translucent to transparent on the right (to showcase the sharp classroom photo) -->
-    <div class="absolute inset-0 bg-gradient-to-r from-brand-beige via-brand-beige/85 to-transparent z-0"></div>
+  <section class="relative min-h-screen pt-36 pb-20 flex items-center justify-start overflow-hidden bg-cover bg-center" style="background-image: url('images/work/volunteer_classroom.jpg');">
+    <!-- Sophisticated cinematic gradient overlay: dark on the left (for text contrast), transparent on the right (to showcase the sharp classroom photo) -->
+    <div class="absolute inset-0 bg-gradient-to-r from-[#1f2421]/95 via-[#1f2421]/60 to-transparent z-0"></div>
     
     <div class="max-w-6xl mx-auto px-6 relative z-10 w-full grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
       
-      <!-- Text and Metrics Left-Aligned Column -->
+      <!-- Text and Metrics Left-Aligned Column (Occupies 7 out of 12 columns, leaving the right side wide open) -->
       <div class="lg:col-span-7 space-y-8 text-left flex flex-col items-start">
         
         <!-- Award Badge -->
-        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-brand-green/10 border border-brand-green/20 text-brand-green text-xs font-semibold uppercase tracking-wider">
+        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-[#8ea89d] text-xs font-semibold uppercase tracking-wider">
           <span>🏆 SWD Silver Volunteer Award Recipient</span>
         </div>
         
         <!-- Headline -->
-        <h1 class="text-6xl sm:text-7xl md:text-8xl font-light tracking-tight text-brand-dark leading-[1.05] font-serif">
+        <h1 class="text-6xl sm:text-7xl md:text-8xl font-light tracking-tight text-white leading-[1.05] font-serif">
           Helping Kids Learn. <br>
-          <span class="italic font-light text-brand-green">Bridging the Gap.</span>
+          <span class="italic font-light text-[#8ea89d]">Bridging the Gap.</span>
         </h1>
         
         <!-- Description -->
-        <p class="text-base sm:text-lg text-brand-muted max-w-xl leading-relaxed font-light">
+        <p class="text-base sm:text-lg text-white/95 max-w-xl leading-relaxed font-light">
           Learning English shouldn't be a struggle. We are a friendly team of student volunteers helping kids in Hong Kong master English through clear Cantonese explanations and free learning apps.
         </p>
 
         <!-- CTA Buttons -->
         <div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
-          <a href="#partnership" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 text-sm font-semibold text-white bg-brand-green hover:bg-brand-sage rounded transition-all shadow-md">
+          <a href="#partnership" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 text-sm font-semibold text-[#1f2421] bg-white hover:bg-[#8ea89d] rounded transition-all">
             Join as a Volunteer Tutor
           </a>
-          <a href="#gap" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 text-sm font-semibold text-brand-dark bg-transparent border border-brand-dark/25 hover:bg-brand-border/40 hover:border-brand-dark/40 rounded transition-colors">
+          <a href="#gap" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 text-sm font-semibold text-white bg-transparent border border-white/30 hover:border-white rounded transition-colors">
             How We Help Kids
           </a>
         </div>
 
         <!-- Metrics -->
-        <div class="grid grid-cols-3 gap-8 pt-8 border-t border-brand-border text-left w-full max-w-md">
+        <div class="grid grid-cols-3 gap-8 pt-8 border-t border-white/15 text-left w-full max-w-md">
           <div>
-            <div class="text-3xl font-normal font-serif text-brand-green">100+</div>
-            <div class="text-[10px] text-brand-muted mt-1 uppercase tracking-wider font-mono">Tutoring Hours</div>
+            <div class="text-3xl font-normal font-serif text-white">100+</div>
+            <div class="text-[10px] text-white/70 mt-1 uppercase tracking-wider font-mono">Tutoring Hours</div>
           </div>
           <div>
-            <div class="text-3xl font-normal font-serif text-brand-green">20+</div>
-            <div class="text-[10px] text-brand-muted mt-1 uppercase tracking-wider font-mono">Student Tutors</div>
+            <div class="text-3xl font-normal font-serif text-white">20+</div>
+            <div class="text-[10px] text-white/70 mt-1 uppercase tracking-wider font-mono">Student Tutors</div>
           </div>
           <div>
-            <div class="text-3xl font-normal font-serif text-brand-green">5 Schools</div>
-            <div class="text-[10px] text-brand-muted mt-1 uppercase tracking-wider font-mono">Collaborating</div>
+            <div class="text-3xl font-normal font-serif text-white">5 Schools</div>
+            <div class="text-[10px] text-white/70 mt-1 uppercase tracking-wider font-mono">Collaborating</div>
           </div>
         </div>
 
@@ -182,7 +181,7 @@
   </section>
 
   <!-- The Gap (About the Problem) -->
-  <section id="gap" class="py-24 bg-brand-cream border-y border-brand-border relative">
+  <section id="gap" class="py-24 bg-white border-y border-brand-border relative">
     <div class="max-w-6xl mx-auto px-6">
       <div class="max-w-2xl space-y-4 mb-20">
         <h2 class="text-xs font-semibold text-brand-green uppercase tracking-wider font-mono">Why We Are Here</h2>
@@ -232,7 +231,7 @@
   </section>
 
   <!-- The Pedagogy (Bilingual Scaffolding Explained) -->
-  <section id="pedagogy" class="py-24 relative overflow-hidden bg-brand-beige">
+  <section id="pedagogy" class="py-24 relative overflow-hidden bg-[#faf9f6]">
     <div class="max-w-6xl mx-auto px-6">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
         
@@ -268,7 +267,7 @@
           <div class="bg-white border border-brand-border p-6 rounded-2xl shadow-xl max-w-[400px] w-full relative">
             <span class="text-[10px] font-mono text-brand-muted uppercase tracking-wider">Interactive GoAsk Scaffolding Simulator</span>
             
-            <div class="mt-4 bg-brand-cream p-4 rounded-xl border border-brand-border space-y-4 min-h-[300px] flex flex-col justify-between">
+            <div class="mt-4 bg-[#faf9f6] p-4 rounded-xl border border-brand-border space-y-4 min-h-[300px] flex flex-col justify-between">
               <div class="space-y-3">
                 <div class="flex items-start space-x-2">
                   <div class="w-6 h-6 rounded-full bg-brand-green/20 flex items-center justify-center font-bold text-[10px] text-brand-green">S</div>
@@ -315,7 +314,7 @@
   </section>
 
   <!-- THE ACTUAL WORK SHOWCASE (NO SLOP - HIGH FIDELITY LAYOUTS & TABLES) -->
-  <section id="work" class="py-24 bg-brand-cream border-y border-brand-border relative">
+  <section id="work" class="py-24 bg-white border-y border-brand-border relative">
     <div class="max-w-6xl mx-auto px-6">
       <div class="text-center max-w-3xl mx-auto space-y-4 mb-20">
         <h2 class="text-xs font-semibold text-brand-green uppercase tracking-wider font-mono">Our Journey & Impact</h2>
@@ -331,7 +330,7 @@
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
         
         <!-- Left: Structured Table of Service -->
-        <div class="lg:col-span-8 bg-brand-beige/50 border border-brand-border rounded-2xl p-6 md:p-8">
+        <div class="lg:col-span-8 bg-[#faf9f6] border border-brand-border rounded-2xl p-6 md:p-8">
           <div class="border-b border-brand-border pb-4 mb-6">
             <h4 class="text-xl font-normal font-serif text-brand-dark">The Table of Service</h4>
             <p class="text-xs text-brand-muted mt-1 font-mono">Systematic Action Stages (CoV Program)</p>
@@ -372,7 +371,7 @@
         </div>
 
         <!-- Right: Official Recognition & Certificate -->
-        <div class="lg:col-span-4 bg-brand-beige/50 border border-brand-border rounded-2xl p-6 text-center space-y-6 flex flex-col justify-between">
+        <div class="lg:col-span-4 bg-[#faf9f6] border border-brand-border rounded-2xl p-6 text-center space-y-6 flex flex-col justify-between">
           <div class="space-y-4">
             <span class="text-[10px] font-mono text-brand-muted uppercase tracking-wider block">Official Validation</span>
             
@@ -396,7 +395,7 @@
   </section>
 
   <!-- Coalition & Alliances -->
-  <section id="coalition" class="py-24 relative overflow-hidden bg-brand-beige">
+  <section id="coalition" class="py-24 relative overflow-hidden">
     <div class="max-w-6xl mx-auto px-6">
       <div class="text-center max-w-3xl mx-auto space-y-4 mb-20">
         <h2 class="text-xs font-semibold text-brand-green uppercase tracking-wider font-mono">The Alliance</h2>
@@ -446,7 +445,7 @@
   </section>
 
   <!-- Interactive Partnership Form -->
-  <section id="partnership" class="py-24 bg-brand-cream border-t border-brand-border relative">
+  <section id="partnership" class="py-24 bg-brand-panel border-t border-brand-border relative">
     <div class="max-w-4xl mx-auto px-6">
       <div class="text-center space-y-4 mb-16">
         <h2 class="text-xs font-semibold text-brand-green uppercase tracking-wider font-mono">Join the Family</h2>
@@ -462,22 +461,22 @@
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <label for="contact-name" class="block text-xs font-mono text-brand-muted uppercase tracking-wider mb-2">Full Name</label>
-              <input type="text" id="contact-name" required class="w-full bg-brand-cream border border-brand-border focus:border-brand-green rounded px-4 py-3 text-sm text-brand-dark focus:outline-none transition-colors" placeholder="e.g. Eryao Wong">
+              <input type="text" id="contact-name" required class="w-full bg-[#faf9f6] border border-brand-border focus:border-brand-green rounded px-4 py-3 text-sm text-brand-dark focus:outline-none transition-colors" placeholder="e.g. Eryao Wong">
             </div>
             <div>
               <label for="contact-email" class="block text-xs font-mono text-brand-muted uppercase tracking-wider mb-2">Email Address</label>
-              <input type="email" id="contact-email" required class="w-full bg-brand-cream border border-brand-border focus:border-brand-green rounded px-4 py-3 text-sm text-brand-dark focus:outline-none transition-colors" placeholder="e.g. contact@organisation.org">
+              <input type="email" id="contact-email" required class="w-full bg-[#faf9f6] border border-brand-border focus:border-brand-green rounded px-4 py-3 text-sm text-brand-dark focus:outline-none transition-colors" placeholder="e.g. contact@organisation.org">
             </div>
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <label for="institution" class="block text-xs font-mono text-brand-muted uppercase tracking-wider mb-2">School or Organization</label>
-              <input type="text" id="institution" required class="w-full bg-brand-cream border border-brand-border focus:border-brand-green rounded px-4 py-3 text-sm text-brand-dark focus:outline-none transition-colors" placeholder="e.g. Stamford American School">
+              <input type="text" id="institution" required class="w-full bg-[#faf9f6] border border-brand-border focus:border-brand-green rounded px-4 py-3 text-sm text-brand-dark focus:outline-none transition-colors" placeholder="e.g. Stamford American School">
             </div>
             <div>
               <label for="role-type" class="block text-xs font-mono text-brand-muted uppercase tracking-wider mb-2">How would you like to join?</label>
-              <select id="role-type" class="w-full bg-brand-cream border border-brand-border focus:border-brand-green rounded px-4 py-3 text-sm text-brand-dark focus:outline-none transition-colors">
+              <select id="role-type" class="w-full bg-[#faf9f6] border border-brand-border focus:border-brand-green rounded px-4 py-3 text-sm text-brand-dark focus:outline-none transition-colors">
                 <option value="school">Join as a Student Tutor (High School)</option>
                 <option value="center">Partner Community Center (Hong Kong)</option>
                 <option value="corporate">Become a Sponsor or Tech Partner</option>
@@ -488,7 +487,7 @@
 
           <div>
             <label for="proposal-desc" class="block text-xs font-mono text-brand-muted uppercase tracking-wider mb-2">How can we work together?</label>
-            <textarea id="proposal-desc" rows="4" required class="w-full bg-brand-cream border border-brand-border focus:border-brand-green rounded px-4 py-3 text-sm text-brand-dark focus:outline-none transition-colors" placeholder="Briefly tell us how you'd like to help, if you need free student apps for your center, or any questions you have..."></textarea>
+            <textarea id="proposal-desc" rows="4" required class="w-full bg-[#faf9f6] border border-brand-border focus:border-brand-green rounded px-4 py-3 text-sm text-brand-dark focus:outline-none transition-colors" placeholder="Briefly tell us how you'd like to help, if you need free student apps for your center, or any questions you have..."></textarea>
           </div>
 
           <!-- Hidden Honeypot for simple spam protection -->
@@ -509,7 +508,7 @@
           </div>
           <h3 class="text-2xl font-light text-brand-dark font-serif">Message Sent!</h3>
           <p class="text-brand-muted text-xs max-w-sm font-light leading-relaxed">
-            Thank you! Your request has been securely saved in our Community of Voices database. Our team will review your message and reach out to you within 48 hours.
+            Thank you! Your request has been securely saved in our GoAsk NGO database. Our team will review your message and reach out to you within 48 hours.
           </p>
           <button onclick="resetForm()" class="px-5 py-2 text-xs font-semibold text-brand-dark hover:bg-brand-dark hover:text-white border border-brand-border rounded transition-colors">
             Send Another Message
@@ -521,7 +520,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-brand-beige border-t border-brand-border py-16 text-xs text-brand-muted">
+  <footer class="bg-[#faf9f6] border-t border-brand-border py-16 text-xs text-brand-muted">
     <div class="max-w-6xl mx-auto px-6 space-y-6">
       <div class="flex flex-col sm:flex-row items-center justify-between gap-6 border-b border-brand-border pb-12">
         <span class="font-serif text-2xl text-brand-dark">GoAsk <span class="italic font-light">NGO</span></span>
