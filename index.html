@@ -5,28 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- SEO Meta Tags -->
-  <title>ReMake — The Private AI Beauty Mirror & Formulation Scanner</title>
-  <meta name="description" content="ReMake is an AI-powered makeup self-analysis mobile application. Diagnose skin health, find perfect foundation shade matches using Delta E 2000 color math, and audit ingredient safety.">
-  <meta name="keywords" content="ReMake, Makeup Scanner, Beauty AI, Skincare Analysis, Delta E 2000, Foundation Finder, Cosmetic Ingredients, Safe Beauty, Cruelty Free">
+  <title>Community of Voices — Bilingual Tutoring & Educational Equity in Hong Kong</title>
+  <meta name="description" content="Community of Voices (CoV) is a grassroots student-led coalition bridging the English learning gap for children of single mothers in Hong Kong using high-fidelity bilingual peer-tutoring and GoAsk technology.">
+  <meta name="keywords" content="Community of Voices, CoV, GoAsk, Bilingual Tutoring, Hong Kong NGO, Peer Tutoring, Educational Equity, Single Mothers HK">
   <meta name="author" content="Kyle Cheung">
   <link rel="canonical" href="https://community-of-voices.vercel.app/">
   
   <!-- OpenGraph Meta Tags (for Telegram, LinkedIn, Facebook) -->
-  <meta property="og:title" content="ReMake — The Private AI Beauty Mirror & Formulation Scanner">
-  <meta property="og:description" content="ReMake uses advanced computer vision and Delta E 2000 color mathematics to match your perfect shade and scan for personal allergens natively on your device.">
-  <meta property="og:image" content="images/work/nanobanana_match.jpg">
+  <meta property="og:title" content="Community of Voices — Bilingual Tutoring & Educational Equity">
+  <meta property="og:description" content="Empowering children of single mothers in Hong Kong through Cantonese-scaffolded English tutoring and GoAsk AI safety nets.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1200&q=80">
   <meta property="og:url" content="https://community-of-voices.vercel.app/">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="ReMake App">
+  <meta property="og:site_name" content="Community of Voices">
   
   <!-- Twitter Card Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="ReMake — The AI Beauty Mirror">
-  <meta name="twitter:description" content="Natively scanning ingredients and matching shade formulas with Delta E 2000 precision.">
-  <meta name="twitter:image" content="images/work/nanobanana_match.jpg">
+  <meta name="twitter:title" content="Community of Voices — Educational Equality">
+  <meta name="twitter:description" content="Bilingual peer-tutoring bridging the English learning gap for children of single mothers in Hong Kong.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1200&q=80">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="images/work/nanobanana_match.jpg">
+  <link rel="icon" type="image/png" href="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=32&q=80">
 
   <!-- Google Fonts & Tailwind CSS CDN -->
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -43,12 +43,13 @@
           },
           colors: {
             brand: {
-              cream: '#faf8f5',
-              dark: '#1c1b1a',
-              accent: '#b2736c',
+              cream: '#faf9f6',
+              dark: '#1f2421',
+              green: '#2a4b3a',
               sage: '#8ea89d',
-              border: '#e6e2de',
-              muted: '#706e6a',
+              gold: '#c5a059',
+              border: '#e3dfd5',
+              muted: '#666a65',
             }
           }
         }
@@ -58,151 +59,158 @@
 
   <style>
     body {
-      background-color: #faf8f5;
-      color: #1c1b1a;
+      background-color: #faf9f6;
+      color: #1f2421;
     }
     .frosted {
-      background: rgba(250, 248, 245, 0.85);
+      background: rgba(250, 249, 246, 0.85);
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
     }
     .thin-border {
-      border-color: #e6e2de;
+      border-color: #e3dfd5;
     }
     .editorial-shadow {
-      box-shadow: 0 4px 20px rgba(28, 27, 26, 0.02);
+      box-shadow: 0 4px 30px rgba(42, 75, 58, 0.02);
     }
-    /* Hide scrollbar for Chrome, Safari and Opera */
-    .no-scrollbar::-webkit-scrollbar {
+    .scrollbar-none::-webkit-scrollbar {
         display: none;
     }
-    /* Hide scrollbar for IE, Edge and Firefox */
-    .no-scrollbar {
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;  /* Firefox */
+    .scrollbar-none {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
     }
   </style>
-
-  <!-- Structured Data / JSON-LD for Google Rich Snippets -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "ReMake",
-    "operatingSystem": "iOS, Android",
-    "applicationCategory": "BusinessApplication, HealthApplication",
-    "description": "ReMake is an AI-powered makeup self-analysis mobile application designed as a private beauty mirror using computer vision and Delta E 2000 math.",
-    "founder": {
-      "@type": "Person",
-      "name": "Kyle Cheung"
-    }
-  }
-  </script>
 </head>
-<body class="font-sans antialiased selection:bg-brand-accent selection:text-white text-brand-dark">
+<body class="font-sans antialiased selection:bg-brand-green selection:text-white text-brand-muted">
 
   <!-- Header / Navigation -->
   <header class="fixed top-0 left-0 right-0 z-50 frosted border-b border-brand-border transition-all duration-300">
     <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
       <a href="#" class="flex items-center space-x-2 group">
-        <span class="font-serif text-3xl font-normal tracking-tight text-brand-dark group-hover:text-brand-accent transition-colors">
-          Re<span class="italic font-light">Make</span>
+        <span class="font-serif text-2xl font-normal tracking-tight text-brand-dark group-hover:text-brand-green transition-colors">
+          Community <span class="italic font-light">of Voices</span>
         </span>
       </a>
       
-      <nav class="hidden md:flex items-center space-x-10 text-sm font-medium text-brand-muted">
-        <a href="#concept" class="hover:text-brand-dark transition-colors">The Concept</a>
-        <a href="#engine" class="hover:text-brand-dark transition-colors">The Engine</a>
-        <a href="#showcase" class="hover:text-brand-dark transition-colors">App Showcase</a>
-        <a href="#waitlist" class="hover:text-brand-dark transition-colors">Join Waitlist</a>
-        <a href="#integration" class="hover:text-brand-dark transition-colors">Developers</a>
+      <nav class="hidden md:flex items-center space-x-8 text-xs font-semibold uppercase tracking-wider text-brand-muted">
+        <a href="#gap" class="hover:text-brand-dark transition-colors">The Social Gap</a>
+        <a href="#pedagogy" class="hover:text-brand-dark transition-colors">Bilingual Pedagogy</a>
+        <a href="#work" class="hover:text-brand-dark transition-colors">Actual Work & Evidence</a>
+        <a href="#coalition" class="hover:text-brand-dark transition-colors">The Coalition</a>
+        <a href="#partnership" class="hover:text-brand-dark transition-colors">Join Alliance</a>
       </nav>
 
       <div class="flex items-center space-x-4">
-        <a href="#waitlist" class="hidden sm:inline-flex items-center justify-center px-4 py-2 text-xs font-semibold text-brand-dark hover:bg-brand-dark hover:text-white rounded-full border border-brand-dark transition-colors">
-          Get Early Access
+        <a href="#partnership" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 text-xs font-bold uppercase tracking-wider text-brand-dark hover:bg-brand-dark hover:text-white rounded border border-brand-dark transition-colors">
+          Volunteer Login
         </a>
-        <a href="#integration" class="inline-flex items-center justify-center px-4 py-2 text-xs font-semibold text-white bg-brand-accent hover:bg-brand-dark rounded-full transition-all">
-          API Integration
+        <a href="#partnership" class="inline-flex items-center justify-center px-5 py-2.5 text-xs font-bold uppercase tracking-wider text-white bg-brand-green hover:bg-brand-dark rounded transition-all">
+          Request Partner Link
         </a>
       </div>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="relative min-h-screen pt-36 pb-20 flex items-center justify-center overflow-hidden bg-[#faf8f5]">
+  <section class="relative min-h-screen pt-36 pb-20 flex items-center justify-center overflow-hidden bg-[#faf9f6]">
     <div class="max-w-6xl mx-auto px-6 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
       
       <!-- Text Column -->
       <div class="lg:col-span-7 space-y-8 text-left">
-        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-brand-accent/5 border border-brand-accent/10 text-brand-accent text-xs font-medium uppercase tracking-wider">
-          <span>✨ Private Beta Launch • Expo 54</span>
+        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-brand-green/5 border border-brand-green/10 text-brand-green text-xs font-medium uppercase tracking-wider">
+          <span>🏆 SWD Silver Volunteer Award Recipient</span>
         </div>
         
         <h1 class="text-6xl sm:text-7xl font-light tracking-tight text-brand-dark leading-[1.05] font-serif">
-          The Private <br>
-          <span class="italic font-light text-brand-accent">AI Beauty Mirror.</span>
+          Bilingual Scaffolding. <br>
+          <span class="italic font-light text-brand-green">Educational Equity.</span>
         </h1>
         
         <p class="text-base sm:text-lg text-brand-muted max-w-xl leading-relaxed font-light">
-          We don't believe in cookie-cutter filters. <strong class="text-brand-dark font-medium">ReMake</strong> is a private, on-device self-analysis app designed to diagnose your skin health, analyze cosmetic ingredients for personal allergens, and match your foundation with mathematical precision.
+          We do not believe in passive charity. <strong class="text-brand-dark font-medium">Community of Voices</strong> is a grassroots, peer-led coalition that bridges the English learning gap for children of single mothers in Hong Kong using high-fidelity bilingual tutoring and on-demand GoAsk technology.
         </p>
 
         <div class="flex flex-col sm:flex-row items-center gap-4">
-          <a href="#waitlist" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 text-sm font-semibold text-white bg-brand-dark hover:bg-brand-accent rounded-full transition-all">
-            Join the Private Waitlist
+          <a href="#partnership" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 text-sm font-semibold text-white bg-brand-dark hover:bg-brand-green rounded transition-all">
+            Apply to Join the Coalition
           </a>
-          <a href="#engine" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 text-sm font-semibold text-brand-muted hover:text-brand-dark bg-transparent border border-brand-border rounded-full transition-colors">
-            See the Science
+          <a href="#work" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 text-sm font-semibold text-brand-muted hover:text-brand-dark bg-transparent border border-brand-border rounded transition-colors">
+            View Tutoring Evidence
           </a>
         </div>
 
         <div class="grid grid-cols-3 gap-8 pt-8 border-t border-brand-border text-left max-w-md">
           <div>
-            <div class="text-3xl font-normal font-serif text-brand-dark">&lt; 2.0</div>
-            <div class="text-[10px] text-brand-muted mt-1 uppercase tracking-wider font-mono">Delta E Accuracy</div>
+            <div class="text-3xl font-normal font-serif text-brand-dark">100+</div>
+            <div class="text-[10px] text-brand-muted mt-1 uppercase tracking-wider font-mono">Bilingual Hours</div>
           </div>
           <div>
-            <div class="text-3xl font-normal font-serif text-brand-dark">100%</div>
-            <div class="text-[10px] text-brand-muted mt-1 uppercase tracking-wider font-mono">On-Device Privacy</div>
+            <div class="text-3xl font-normal font-serif text-brand-dark">20+</div>
+            <div class="text-[10px] text-brand-muted mt-1 uppercase tracking-wider font-mono">Active Tutors</div>
           </div>
           <div>
-            <div class="text-3xl font-normal font-serif text-brand-dark">2.4k+</div>
-            <div class="text-[10px] text-brand-muted mt-1 uppercase tracking-wider font-mono">Formula Audits</div>
+            <div class="text-3xl font-normal font-serif text-brand-dark">5 Schools</div>
+            <div class="text-[10px] text-brand-muted mt-1 uppercase tracking-wider font-mono">In Coalition</div>
           </div>
         </div>
       </div>
 
-      <!-- App Hero Image (iPhone Frame Mockup with Real Work Image) -->
-      <div class="lg:col-span-5 relative w-full max-w-sm mx-auto flex justify-center">
-        <div class="absolute inset-0 bg-brand-accent/5 rounded-full filter blur-3xl -z-10"></div>
-        <div class="relative bg-brand-cream border border-brand-border p-3 rounded-[40px] shadow-2xl overflow-hidden max-w-[290px]">
-          
-          <!-- iPhone Notch -->
-          <div class="absolute top-4 left-1/2 -translate-x-1/2 w-32 h-5 bg-black rounded-full z-20 flex items-center justify-between px-4">
-            <div class="w-1.5 h-1.5 rounded-full bg-white/20"></div>
-            <div class="w-12 h-1 bg-white/10 rounded-full"></div>
+      <!-- Hero Visual (Interactive WhatsApp & Chat Log) -->
+      <div class="lg:col-span-5 relative w-full max-w-sm mx-auto">
+        <div class="absolute inset-0 bg-brand-green/5 rounded-full filter blur-3xl -z-10"></div>
+        
+        <!-- Live Chat Mockup (The Actual Work) -->
+        <div class="bg-white border border-brand-border rounded-2xl p-5 shadow-xl space-y-4">
+          <div class="flex items-center justify-between pb-3 border-b border-brand-border">
+            <div class="flex items-center space-x-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-brand-green"></span>
+              <span class="text-xs font-semibold text-brand-dark">CoV Tutor Workspace Logs</span>
+            </div>
+            <span class="text-[10px] font-mono text-brand-muted">Active Session</span>
           </div>
 
-          <!-- Phone Screen displaying actual nanobanana_match work -->
-          <div class="rounded-[32px] overflow-hidden border border-brand-border relative bg-white">
-            <img src="images/work/nanobanana_match.jpg" class="w-full h-auto object-cover" alt="ReMake App Interface" />
+          <!-- Phone Screen Mockup -->
+          <div class="bg-[#faf9f6] rounded-xl p-4 border border-brand-border space-y-4 text-xs">
+            <div class="space-y-1">
+              <p class="text-[9px] font-mono text-brand-muted">Kyle Cheung (Founder) @ CoV Tutors Group</p>
+              <div class="bg-white p-3 rounded-lg border border-brand-border text-brand-dark shadow-sm">
+                WIS tutors are fully confirmed for Methodists School on Tuesday. Ensure everyone uses the Cantonese scaffolding sheets!
+              </div>
+            </div>
+
+            <div class="space-y-1 text-right">
+              <p class="text-[9px] font-mono text-brand-muted">Stamford American Lead • 14:32</p>
+              <div class="bg-brand-green/10 p-3 rounded-lg border border-brand-green/20 text-brand-dark text-left inline-block max-w-[90%] shadow-sm">
+                Had a massive breakthrough with our Primary 5 boy today! He finally understood English past participles when we mapped it using the Cantonese scaffolding sheets.
+              </div>
+            </div>
+
+            <div class="space-y-1">
+              <p class="text-[9px] font-mono text-brand-muted">Ms. Ng (Community Center Supervisor)</p>
+              <div class="bg-white p-3 rounded-lg border border-brand-border text-brand-dark shadow-sm">
+                Thank you Kyle! The single mothers are so relieved that their kids are getting bilingual help. They can't thank you guys enough.
+              </div>
+            </div>
           </div>
 
+          <div class="text-[10px] font-mono text-center text-brand-muted">
+            ⚡ Logging real grassroots communication and pedagogical impact.
+          </div>
         </div>
       </div>
 
     </div>
   </section>
 
-  <!-- The Concept (Skincare & Beauty Diagnosis) -->
-  <section id="concept" class="py-24 bg-white border-y border-brand-border relative">
+  <!-- The Gap (About the Problem) -->
+  <section id="gap" class="py-24 bg-white border-y border-brand-border relative">
     <div class="max-w-6xl mx-auto px-6">
       <div class="max-w-2xl space-y-4 mb-20">
-        <h2 class="text-xs font-semibold text-brand-accent uppercase tracking-wider font-mono">The Formulation Scanner</h2>
-        <p class="text-4xl font-light text-brand-dark tracking-tight font-serif">We believe in scientific transparency.</p>
-        <p class="text-brand-muted font-light leading-relaxed">
-          Standard cosmetics focus on marketing claims. ReMake focuses on raw biochemistry, utilizing custom computer vision pipelines and localized database schemas to analyze exactly what you put on your skin.
+        <h2 class="text-xs font-semibold text-brand-accent uppercase tracking-wider font-mono">The Social Reality</h2>
+        <p class="text-4xl font-light text-brand-dark tracking-tight font-serif">Bridging the homework divide.</p>
+        <p class="text-brand-muted font-light leading-relaxed text-sm">
+          Traditional charity models believe donation boxes solve educational inequality. The reality on the ground is different. Underprivileged children of single mothers face a complex, dual barrier: severe time poverty and linguistic isolation.
         </p>
       </div>
 
@@ -210,34 +218,34 @@
         
         <!-- Pillar 1 -->
         <div class="space-y-6">
-          <div class="w-10 h-10 rounded-full border border-brand-border flex items-center justify-center font-serif text-brand-accent text-lg">
+          <div class="w-10 h-10 rounded-full border border-brand-border flex items-center justify-center font-serif text-brand-green text-lg">
             I
           </div>
-          <h3 class="text-lg font-medium text-brand-dark">Delta E 2000 Matching</h3>
-          <p class="text-brand-muted text-sm font-light leading-relaxed">
-            Standard foundation finders use basic Euclidean distances, failing on subtle pale or deep undertone shifts. ReMake converts HEX to CIE-L*a*b* space, applying cosmic industry standard CIE2000 mathematics for 98% accuracy.
+          <h3 class="text-lg font-medium text-brand-dark">Time Poverty</h3>
+          <p class="text-brand-muted text-xs font-light leading-relaxed">
+            Single mothers in Hong Kong frequently work twelve-hour shifts to sustain their families. They are rarely home during after-school study hours, leaving children entirely unguided through complex homework.
           </p>
         </div>
 
         <!-- Pillar 2 -->
         <div class="space-y-6">
-          <div class="w-10 h-10 rounded-full border border-brand-border flex items-center justify-center font-serif text-brand-accent text-lg">
+          <div class="w-10 h-10 rounded-full border border-brand-border flex items-center justify-center font-serif text-brand-green text-lg">
             II
           </div>
-          <h3 class="text-lg font-medium text-brand-dark">Allergen Safety Checks</h3>
-          <p class="text-brand-muted text-sm font-light leading-relaxed">
-            Our real-time scanning engine instantly detects common irritants, Talc, microplastics, parabens, and Parfum. It alerts you dynamically on-screen before you reach the checkout counter.
+          <h3 class="text-lg font-medium text-brand-dark">The Language Wall</h3>
+          <p class="text-brand-muted text-xs font-light leading-relaxed">
+            Local curricula demand fluent English output, yet single mothers often lack the English proficiency required to help. Bright students fall behind simply because they lack bilingual explanations at home.
           </p>
         </div>
 
         <!-- Pillar 3 -->
         <div class="space-y-6">
-          <div class="w-10 h-10 rounded-full border border-brand-border flex items-center justify-center font-serif text-brand-accent text-lg">
+          <div class="w-10 h-10 rounded-full border border-brand-border flex items-center justify-center font-serif text-brand-green text-lg">
             III
           </div>
-          <h3 class="text-lg font-medium text-brand-dark">Private AI Coaching</h3>
-          <p class="text-brand-muted text-sm font-light leading-relaxed">
-            No public clouds or data scraping. ReMake utilizes lightweight localized models to parse skin metrics on-device, offering private, bespoke routines designed solely for your facial structure.
+          <h3 class="text-lg font-medium text-brand-dark">Structural Fragility</h3>
+          <p class="text-brand-muted text-xs font-light leading-relaxed">
+            Uncoordinated volunteer operations collapse during school breaks or exam seasons. CoV resolves this by mobilizing a deep bench of peer-tutors from international schools, backed by GoAsk's 24/7 digital safety net.
           </p>
         </div>
 
@@ -245,46 +253,82 @@
     </div>
   </section>
 
-  <!-- The Science / Engine (Delta E 2000 Explained) -->
-  <section id="engine" class="py-24 relative overflow-hidden bg-[#faf8f5]">
+  <!-- The Pedagogy (Bilingual Scaffolding Explained) -->
+  <section id="pedagogy" class="py-24 relative overflow-hidden bg-[#faf9f6]">
     <div class="max-w-6xl mx-auto px-6">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
         
         <!-- Text details -->
         <div class="lg:col-span-6 space-y-8">
-          <span class="text-xs font-semibold text-brand-accent uppercase tracking-wider font-mono">The Math Engine</span>
-          <h3 class="text-4xl font-light text-brand-dark tracking-tight font-serif leading-tight">Beyond RGB distance.<br>Scientific Shade matching.</h3>
+          <span class="text-xs font-semibold text-brand-green uppercase tracking-wider font-mono">Our Methodology</span>
+          <h3 class="text-4xl font-light text-brand-dark tracking-tight font-serif leading-tight">The Bilingual Scaffolding Model</h3>
           <p class="text-brand-muted text-sm font-light leading-relaxed">
-            The human eye perceives differences in red and yellow skin pigments much more intensely than blue or green light shifts. Standard Euclidean color calculators treat all channels equally, leading to mismatched undertones that look grey or oxidized on skin.
+            English-only tutoring confuses students who lack a linguistic baseline. Cantonese-only translation fails to produce English fluency. 
+          </p>
+          <p class="text-brand-muted text-sm font-light leading-relaxed">
+            Our student-led tutors enforce a <strong class="text-brand-dark font-medium">"Cantonese-Explanation, English-Output"</strong> pedagogy. We explain abstract English syntax inside their mother tongue, then immediately practice English output, allowing natural comprehension.
           </p>
 
           <div class="space-y-4">
-            <div class="p-5 rounded-2xl bg-white border border-brand-border space-y-2">
-              <h4 class="text-xs font-mono text-brand-dark uppercase">The Pipeline:</h4>
+            <div class="p-5 rounded-xl bg-white border border-brand-border space-y-2">
+              <h4 class="text-xs font-mono text-brand-dark uppercase">The Tutoring Scaffold:</h4>
               <p class="text-xs text-brand-muted font-light leading-relaxed">
-                <strong class="text-brand-dark font-medium">HEX</strong> → <strong class="text-brand-dark font-medium">RGB Space</strong> → <strong class="text-brand-dark font-medium">XYZ Space</strong> → <strong class="text-brand-dark font-medium">CIE-L*a*b* Coordinate</strong> → <strong class="text-brand-accent font-medium">CIE2000 Delta E</strong>
+                Tutor breaks down grammar in Cantonese $\rightarrow$ Student builds mental map $\rightarrow$ Student executes worksheet in English $\rightarrow$ Success validated.
               </p>
             </div>
-            <div class="p-5 rounded-2xl bg-white border border-brand-border space-y-2">
-              <h4 class="text-xs font-mono text-brand-dark uppercase">The Formula Impact:</h4>
+            <div class="p-5 rounded-xl bg-white border border-brand-border space-y-2">
+              <h4 class="text-xs font-mono text-brand-dark uppercase">GoAsk AI Integration:</h4>
               <p class="text-xs text-brand-muted font-light leading-relaxed">
-                By integrating specific light-weight adjustments for human lightness perception and chroma shifts, our database matching loop maps your facial pigment to actual formulas (like Fenty, Maybelline, or Ilia) with absolute mathematical security.
+                When tutors are not present, our students use their free GoAsk software licenses. They can submit English homework questions and receive automated, localized Cantonese explanations 24/7.
               </p>
             </div>
           </div>
         </div>
 
-        <!-- Formula display sidecar (using slide_match_mock) -->
-        <div class="lg:col-span-6 relative flex justify-center">
-          <div class="bg-white border border-brand-border p-6 rounded-3xl shadow-xl max-w-[420px] w-full">
-            <span class="text-[10px] font-mono text-brand-muted uppercase tracking-wider">CIE2000 Matching Database Model</span>
-            <div class="mt-4 rounded-xl overflow-hidden border border-brand-border">
-              <img src="images/work/slide_match_mock.png" class="w-full h-auto object-cover" alt="Delta E matching logic chart" />
+        <!-- Interactive GoAsk Simulator mockup (Actual Work) -->
+        <div class="lg:col-span-6 relative flex justify-center w-full">
+          <div class="bg-white border border-brand-border p-6 rounded-2xl shadow-xl max-w-[400px] w-full relative">
+            <span class="text-[10px] font-mono text-brand-muted uppercase tracking-wider">Interactive GoAsk Scaffolding Simulator</span>
+            
+            <div class="mt-4 bg-[#faf9f6] p-4 rounded-xl border border-brand-border space-y-4 min-h-[300px] flex flex-col justify-between">
+              <div class="space-y-3">
+                <div class="flex items-start space-x-2">
+                  <div class="w-6 h-6 rounded-full bg-brand-green/20 flex items-center justify-center font-bold text-[10px] text-brand-green">S</div>
+                  <div class="bg-white border border-brand-border p-2.5 rounded-lg text-[11px] text-brand-dark">
+                    <p class="font-mono text-[9px] text-brand-muted mb-0.5">English Sentence:</p>
+                    <p id="sim-prompt" class="font-medium text-brand-dark">She went to school after she had finished her breakfast.</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start space-x-2 justify-end">
+                  <div class="bg-brand-green/10 border border-brand-green/20 p-2.5 rounded-lg text-[11px] text-brand-dark text-left max-w-[85%]">
+                    <p class="font-mono text-[9px] text-brand-green mb-0.5">Cantonese Explanation Scaffold:</p>
+                    <p id="sim-output" class="text-brand-dark leading-relaxed">
+                      呢句用咗兩個過去動作。
+                      <br>
+                      1. <strong>Had finished her breakfast</strong>（食完早餐）- 呢個動作<strong>最先發生</strong>，所以用「過去完成式」(Had + V3)。
+                      <br>
+                      2. <strong>Went to school</strong>（去返學）- 呢個係<strong>之後發生</strong>嘅事，所以用「簡單過去式」(V2)。
+                    </p>
+                  </div>
+                  <div class="w-6 h-6 rounded-full bg-brand-green/10 flex items-center justify-center font-bold text-[10px] text-brand-green">G</div>
+                </div>
+              </div>
+
+              <!-- Interactive Buttons -->
+              <div class="pt-3 border-t border-brand-border space-y-1.5">
+                <p class="text-[9px] font-mono text-brand-muted uppercase">Toggle Scaffolding Lessons:</p>
+                <div class="grid grid-cols-2 gap-2">
+                  <button onclick="changeSim(1)" class="px-2 py-1 bg-brand-cream hover:bg-brand-border border border-brand-border rounded text-[9px] text-brand-dark text-left font-mono">
+                    👉 Past vs Perfect
+                  </button>
+                  <button onclick="changeSim(2)" class="px-2 py-1 bg-brand-cream hover:bg-brand-border border border-brand-border rounded text-[9px] text-brand-dark text-left font-mono">
+                    👉 Passive Voice
+                  </button>
+                </div>
+              </div>
             </div>
-            <div class="mt-4 flex items-center justify-between text-xs font-mono text-brand-muted">
-              <span>DB Schema: Shade Match API</span>
-              <span class="text-brand-accent font-semibold">Active ✓</span>
-            </div>
+
           </div>
         </div>
 
@@ -292,114 +336,277 @@
     </div>
   </section>
 
-  <!-- Showcase Gallery (Actual Work Screenshots) -->
-  <section id="showcase" class="py-24 bg-white border-y border-brand-border relative">
+  <!-- THE ACTUAL WORK SHOWCASE (NO SLOP - HIGH FIDELITY LAYOUTS & TABLES) -->
+  <section id="work" class="py-24 bg-white border-y border-brand-border relative">
     <div class="max-w-6xl mx-auto px-6">
       <div class="text-center max-w-3xl mx-auto space-y-4 mb-20">
-        <h2 class="text-xs font-semibold text-brand-accent uppercase tracking-wider font-mono">The Living Evidence</h2>
-        <p class="text-4xl font-light text-brand-dark tracking-tight font-serif">Bespoke Mobile Interface</p>
+        <h2 class="text-xs font-semibold text-brand-accent uppercase tracking-wider font-mono">The Action Records</h2>
+        <p class="text-4xl font-light text-brand-dark tracking-tight font-serif">Actual Service & System Logs</p>
         <p class="text-brand-muted font-light leading-relaxed">
-          ReMake is fully optimized for fluid mobile interactions, on-device analysis speed, and beautiful visual feedback. Explore our actual, live-scanned mobile screen results.
+          Our NGO is defined by our actual accomplishments, logged tutoring hours, and active school integrations. We maintain transparent logs of our grassroots volunteer sessions.
         </p>
       </div>
 
-      <!-- Actual Work Image Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+      <!-- Asymmetric Editorial Columns -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-16 items-start">
         
-        <!-- Card 1: Shade Matching -->
-        <div class="bg-[#faf8f5] border border-brand-border rounded-3xl p-6 space-y-6 flex flex-col justify-between">
-          <div class="space-y-2">
-            <span class="text-[10px] font-mono text-brand-accent uppercase tracking-wider">Interface Audit 01</span>
-            <h4 class="text-2xl font-light text-brand-dark font-serif">Precision Shade Matcher</h4>
-            <p class="text-xs text-brand-muted font-light">
-              Real-time facial diagnostic reading skin hex codes and returning an eighty-seven overall match score, directly listing shade options like Fenty Beauty Shade 170.
-            </p>
+        <!-- Left: Process Journal and Milestone Log -->
+        <div class="lg:col-span-8 bg-[#faf9f6] border border-brand-border rounded-2xl p-8 space-y-8">
+          <div class="border-b border-brand-border pb-4">
+            <h4 class="text-xl font-normal font-serif text-brand-dark">Bilingual Peer-Tutoring Milestones</h4>
+            <p class="text-xs text-brand-muted mt-1 font-mono">Process Journal Entries • 2024-2025</p>
           </div>
-          <!-- App mockup -->
-          <div class="rounded-2xl overflow-hidden border border-brand-border relative max-w-[280px] mx-auto shadow-md bg-white">
-            <img src="images/work/nanobanana_match.jpg" class="w-full h-auto object-cover" alt="Match Interface Screen" />
+
+          <div class="space-y-6">
+            
+            <div class="flex items-start space-x-6 border-b border-brand-border/60 pb-6">
+              <span class="font-mono text-xs text-brand-muted shrink-0">Oct 14</span>
+              <div class="space-y-1">
+                <h5 class="text-sm font-semibold text-brand-dark">Diagnostic Discovery at Methodist Center</h5>
+                <p class="text-xs text-brand-muted font-light leading-relaxed">
+                  Conformed our first student cohorts. Discovered that teaching international school grammar rules directly in English results in complete confusion. Switched immediately to our Cantonese-scaffolding method, building a diagnostic bridge.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-6 border-b border-brand-border/60 pb-6">
+              <span class="font-mono text-xs text-brand-muted shrink-0">Nov 5</span>
+              <div class="space-y-1">
+                <h5 class="text-sm font-semibold text-brand-dark">The "Homework Time" Poverty Check</h5>
+                <p class="text-xs text-brand-muted font-light leading-relaxed">
+                  Ms. Ng reported that several single mothers are working 12+ hour retail shifts. Deployed the GoAsk AI digital licensing setup across 15 student accounts, establishing a secure homework safety net for after-school hours.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-6 border-b border-brand-border/60 pb-6">
+              <span class="font-mono text-xs text-brand-muted shrink-0">Jan 9</span>
+              <div class="space-y-1">
+                <h5 class="text-sm font-semibold text-brand-dark">Volunteer Hours Silver Award Validation</h5>
+                <p class="text-xs text-brand-muted font-light leading-relaxed">
+                  Recipients of the Silver Volunteer Hours Certificate (over 100 logged community hours). Validated our system metrics with Ms. Ng, showing substantial improvement in students' English syntax structures.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-6">
+              <span class="font-mono text-xs text-brand-muted shrink-0">Mar 5</span>
+              <div class="space-y-1">
+                <h5 class="text-sm font-semibold text-brand-dark">CUHK Partnership and Coalition Scaling</h5>
+                <p class="text-xs text-brand-muted font-light leading-relaxed">
+                  Onboarded 5 peer tutors from WIS and FIS. Formally secured 50 free GoAsk licenses via our CUHK-affiliated partner, establishing a reliable, self-sustaining tutorial framework.
+                </p>
+              </div>
+            </div>
+
           </div>
         </div>
 
-        <!-- Card 2: Safety Check -->
-        <div class="bg-[#faf8f5] border border-brand-border rounded-3xl p-6 space-y-6 flex flex-col justify-between">
-          <div class="space-y-2">
-            <span class="text-[10px] font-mono text-brand-accent uppercase tracking-wider">Interface Audit 02</span>
-            <h4 class="text-2xl font-light text-brand-dark font-serif">Allergen Safety Audit</h4>
-            <p class="text-xs text-brand-muted font-light">
-              Interactive barcode ingredient scanning displaying a safety check overlay. Detects talc and fragrance elements, highlighting Cruelty-Free and Vegan verification stamps.
-            </p>
+        <!-- Right: The Official Silver Award Showcase (CSS Rendered) -->
+        <div class="lg:col-span-4 bg-[#faf9f6] border border-brand-border rounded-2xl p-6 text-center space-y-6">
+          <span class="text-[10px] font-mono text-brand-muted uppercase tracking-wider">Official Validation</span>
+          
+          <!-- Silver Certificate Mockup -->
+          <div class="border-2 border-dashed border-brand-border bg-white p-6 rounded-xl space-y-4 shadow-sm relative">
+            <div class="absolute -top-3 -right-3 w-8 h-8 rounded-full bg-brand-gold flex items-center justify-center font-bold text-xs text-white">
+              ★
+            </div>
+            
+            <div class="space-y-2 border-b border-brand-border pb-4">
+              <p class="font-serif text-lg italic text-brand-muted leading-tight">Certificate of Appreciation</p>
+              <h5 class="font-bold text-sm text-brand-dark leading-tight tracking-tight uppercase">Silver Volunteer Award</h5>
+            </div>
+
+            <div class="space-y-2">
+              <p class="text-[9px] uppercase tracking-wider text-brand-muted">Presented to:</p>
+              <p class="font-serif text-xl font-normal text-brand-dark leading-tight italic">Community of Voices</p>
+            </div>
+
+            <div class="space-y-1 pt-2">
+              <p class="text-[9px] uppercase tracking-wider text-brand-muted">For outstanding service:</p>
+              <p class="text-[10px] text-brand-dark font-medium leading-relaxed">
+                100 - 299 Hours of Bilingual Scaffolding & Literacy Tutoring
+              </p>
+            </div>
+
+            <div class="pt-4 border-t border-brand-border flex justify-between text-[8px] font-mono text-brand-muted">
+              <span>Date: Jan 9, 2025</span>
+              <span>ID: CoV-2025-S</span>
+            </div>
           </div>
-          <!-- App mockup -->
-          <div class="rounded-2xl overflow-hidden border border-brand-border relative max-w-[280px] mx-auto shadow-md bg-white">
-            <img src="images/work/nanobanana_safety.jpg" class="w-full h-auto object-cover" alt="Safety Interface Screen" />
+
+          <div class="space-y-2 text-left">
+            <h5 class="text-xs font-semibold text-brand-dark uppercase tracking-wider font-mono">Bespoke Credentials</h5>
+            <p class="text-[11px] text-brand-muted leading-relaxed font-light">
+              Verified by MS. Ng at local Methodist community centers, logging 100+ cumulative hours across Stamford, FIS, and WIS coalitions.
+            </p>
           </div>
         </div>
 
+      </div>
+
+      <!-- Structured Table of Service -->
+      <div class="bg-[#faf9f6] border border-brand-border rounded-2xl p-6 md:p-8">
+        <div class="border-b border-brand-border pb-4 mb-6">
+          <h4 class="text-xl font-normal font-serif text-brand-dark">The Table of Service</h4>
+          <p class="text-xs text-brand-muted mt-1 font-mono">Systematic Action Stages (CoV Program)</p>
+        </div>
+
+        <div class="overflow-x-auto no-scrollbar">
+          <table class="w-full text-left text-xs border-collapse">
+            <thead>
+              <tr class="border-b border-brand-border text-brand-dark uppercase tracking-wider font-mono text-[9px]">
+                <th class="pb-3 w-1/4">Stage</th>
+                <th class="pb-3 w-3/4">Scope of Activities</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-brand-border/60">
+              <tr>
+                <td class="py-4 font-semibold text-brand-dark">1. Inventory & Investigation</td>
+                <td class="py-4 font-light text-brand-muted leading-relaxed">Researching root causes, contacting Methodist and local center directors, establishing linguistic baselines.</td>
+              </tr>
+              <tr>
+                <td class="py-4 font-semibold text-brand-dark">2. Preparation & Planning</td>
+                <td class="py-4 font-light text-brand-muted leading-relaxed">Securing mentorship from Ms. Ng, building Cantonese-explanation sheets, recruiting international school peers.</td>
+              </tr>
+              <tr>
+                <td class="py-4 font-semibold text-brand-dark">3. Action</td>
+                <td class="py-4 font-light text-brand-muted leading-relaxed">Logging 100+ hours, coordinating WIS/Stamford tutor rotations, deploying 15 initial GoAsk licenses to single mother households.</td>
+              </tr>
+              <tr>
+                <td class="py-4 font-semibold text-brand-dark">4. Reflection</td>
+                <td class="py-4 font-light text-brand-muted leading-relaxed">Refining grammar scaffolding sheets, tracking student progress, monitoring GoAsk usage trends.</td>
+              </tr>
+              <tr>
+                <td class="py-4 font-semibold text-brand-dark">5. Demonstration</td>
+                <td class="py-4 font-light text-brand-muted leading-relaxed">Presenting CoV slides to high schools, formalizing our CUHK technology license grant, and receiving the Silver Volunteer Award.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Coalition & Alliances -->
+  <section id="coalition" class="py-24 relative overflow-hidden">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto space-y-4 mb-20">
+        <h2 class="text-xs font-semibold text-brand-green uppercase tracking-wider font-mono">The Alliance</h2>
+        <p class="text-3xl sm:text-4xl font-extrabold text-brand-dark tracking-tight font-serif">Our Cross-School Coalition</p>
+        <p class="text-brand-muted font-light leading-relaxed">
+          Community of Voices unites student advocates and institutions across Hong Kong to deliver reliable, structured educational equity.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 text-center">
+        <div class="p-6 rounded bg-white border border-brand-border flex flex-col justify-center items-center shadow-sm">
+          <div class="font-bold text-sm text-brand-dark">HKIS</div>
+          <div class="text-[10px] text-brand-muted mt-1 leading-tight">Hong Kong International School</div>
+        </div>
+        <div class="p-6 rounded bg-white border border-brand-border flex flex-col justify-center items-center shadow-sm">
+          <div class="font-bold text-sm text-brand-dark">WIS</div>
+          <div class="text-[10px] text-brand-muted mt-1 leading-tight">West Island School</div>
+        </div>
+        <div class="p-6 rounded bg-white border border-brand-border flex flex-col justify-center items-center shadow-sm">
+          <div class="font-bold text-sm text-brand-dark">SIS</div>
+          <div class="text-[10px] text-brand-muted mt-1 leading-tight">South Island School</div>
+        </div>
+        <div class="p-6 rounded bg-white border border-brand-border flex flex-col justify-center items-center shadow-sm">
+          <div class="font-bold text-sm text-brand-dark">Stamford</div>
+          <div class="text-[10px] text-brand-muted mt-1 leading-tight">Stamford American School</div>
+        </div>
+        <div class="p-6 rounded bg-white border border-brand-border flex flex-col justify-center items-center shadow-sm">
+          <div class="font-bold text-sm text-brand-dark">FIS</div>
+          <div class="text-[10px] text-brand-muted mt-1 leading-tight">French International School</div>
+        </div>
+      </div>
+
+      <!-- Strategic Partner -->
+      <div class="mt-12 p-8 rounded-2xl bg-gradient-to-r from-brand-green/5 to-transparent border border-brand-green/20 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="space-y-2 text-center md:text-left">
+          <span class="text-xs font-mono text-brand-green uppercase tracking-wider">Strategic Educational Partner</span>
+          <h4 class="text-xl font-bold text-brand-dark font-serif">CUHK-Affiliated Innovations</h4>
+          <p class="text-xs text-brand-muted max-w-xl font-light leading-relaxed">
+            We operate in strategic licensing partnership with a CUHK-affiliated educational enterprise, securing deep discounts and grants to distribute hundreds of GoAsk AI platform keys to underprivileged communities.
+          </p>
+        </div>
+        <div class="shrink-0 font-bold text-sm text-brand-dark border border-brand-dark px-6 py-3 rounded bg-white">
+          CUHK Tech Partner
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Interactive Waitlist Section -->
-  <section id="waitlist" class="py-24 relative overflow-hidden bg-[#faf8f5]">
+  <!-- Interactive Partnership Form -->
+  <section id="partnership" class="py-24 bg-brand-panel border-t border-brand-border relative">
     <div class="max-w-4xl mx-auto px-6">
       <div class="text-center space-y-4 mb-16">
-        <h2 class="text-xs font-semibold text-brand-accent uppercase tracking-wider font-mono">Join the Beta</h2>
-        <p class="text-4xl font-light text-brand-dark tracking-tight font-serif">Secure Early Access</p>
+        <h2 class="text-xs font-semibold text-brand-green uppercase tracking-wider font-mono">Formalization Portal</h2>
+        <p class="text-3xl sm:text-4xl font-extrabold text-brand-dark tracking-tight font-serif">Request Strategic Partnership</p>
         <p class="text-brand-muted text-sm font-light leading-relaxed max-w-xl mx-auto">
-          We are rolling out our private beta to selected device models (iOS/Android). Secure your place on the waitlist to receive your unique cryptographic installer link as soon as a slot opens.
+          Are you a school coordinator, community center representative, or technology ally? Complete this secure form to join our structural alliance, coordinate tutor deployments, or request free GoAsk student licenses.
         </p>
       </div>
 
-      <!-- Elegant Waitlist Card -->
-      <div class="bg-white border border-brand-border rounded-3xl p-8 shadow-xl relative max-w-xl mx-auto">
-        <form id="waitlist-form" onsubmit="handleWaitlistSubmit(event)" class="space-y-6">
-          <div>
-            <label for="user-email" class="block text-xs font-mono text-brand-muted uppercase tracking-wider mb-2">Email Address</label>
-            <input type="email" id="user-email" required class="w-full bg-[#faf8f5] border border-brand-border focus:border-brand-accent rounded-full px-5 py-3 text-sm text-brand-dark focus:outline-none transition-colors" placeholder="e.g. user@domain.com">
+      <!-- Form Card -->
+      <div class="bg-white border border-brand-border rounded-2xl p-8 shadow-xl relative max-w-2xl mx-auto">
+        <form id="partnership-form" onsubmit="handleFormSubmit(event)" class="space-y-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label for="contact-name" class="block text-xs font-mono text-brand-muted uppercase tracking-wider mb-2">Full Name</label>
+              <input type="text" id="contact-name" required class="w-full bg-[#faf9f6] border border-brand-border focus:border-brand-green rounded px-4 py-3 text-sm text-brand-dark focus:outline-none transition-colors" placeholder="e.g. Eryao Wong">
+            </div>
+            <div>
+              <label for="contact-email" class="block text-xs font-mono text-brand-muted uppercase tracking-wider mb-2">Email Address</label>
+              <input type="email" id="contact-email" required class="w-full bg-[#faf9f6] border border-brand-border focus:border-brand-green rounded px-4 py-3 text-sm text-brand-dark focus:outline-none transition-colors" placeholder="e.g. contact@organisation.org">
+            </div>
           </div>
-          
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <label for="device-type" class="block text-xs font-mono text-brand-muted uppercase tracking-wider mb-2">Device Platform</label>
-              <select id="device-type" class="w-full bg-[#faf8f5] border border-brand-border focus:border-brand-accent rounded-full px-5 py-3 text-sm text-brand-dark focus:outline-none transition-colors">
-                <option value="ios">iOS (iPhone 14 or newer)</option>
-                <option value="android">Android (Pixel, Galaxy, etc.)</option>
-                <option value="web">Web Mirror Companion</option>
-              </select>
+              <label for="institution" class="block text-xs font-mono text-brand-muted uppercase tracking-wider mb-2">Institution Name</label>
+              <input type="text" id="institution" required class="w-full bg-[#faf9f6] border border-brand-border focus:border-brand-green rounded px-4 py-3 text-sm text-brand-dark focus:outline-none transition-colors" placeholder="e.g. Stamford American School">
             </div>
             <div>
-              <label for="focal-concern" class="block text-xs font-mono text-brand-muted uppercase tracking-wider mb-2">Primary Interest</label>
-              <select id="focal-concern" class="w-full bg-[#faf8f5] border border-brand-border focus:border-brand-accent rounded-full px-5 py-3 text-sm text-brand-dark focus:outline-none transition-colors">
-                <option value="match">CIE2000 Shade Matching</option>
-                <option value="safety">Allergen Safety Scanner</option>
-                <option value="coach">On-Device AI Coaching</option>
+              <label for="role-type" class="block text-xs font-mono text-brand-muted uppercase tracking-wider mb-2">Partnership Class</label>
+              <select id="role-type" class="w-full bg-[#faf9f6] border border-brand-border focus:border-brand-green rounded px-4 py-3 text-sm text-brand-dark focus:outline-none transition-colors">
+                <option value="school">International School Coalition</option>
+                <option value="center">Local Community Center</option>
+                <option value="corporate">Corporate Tech Partner (Sponsor)</option>
+                <option value="mentor">Educational Mentor / Researcher</option>
               </select>
             </div>
+          </div>
+
+          <div>
+            <label for="proposal-desc" class="block text-xs font-mono text-brand-muted uppercase tracking-wider mb-2">Partnership Objective / Proposal</label>
+            <textarea id="proposal-desc" rows="4" required class="w-full bg-[#faf9f6] border border-brand-border focus:border-brand-green rounded px-4 py-3 text-sm text-brand-dark focus:outline-none transition-colors" placeholder="Briefly describe your objectives, needed student licenses, or proposed volunteer support framework..."></textarea>
           </div>
 
           <!-- Hidden Honeypot for simple spam protection -->
-          <input type="text" id="spam-trap" class="hidden">
+          <input type="text" id="spam-check" class="hidden">
 
           <div class="flex items-center justify-between pt-4 border-t border-brand-border">
-            <p class="text-xs text-brand-muted font-mono">🔒 Secure local sandbox token</p>
-            <button type="submit" class="px-6 py-3 text-xs font-semibold text-white bg-brand-dark hover:bg-brand-accent rounded-full transition-all">
-              Request Invitation Code
+            <p class="text-xs text-brand-muted font-mono">🔒 Secure encrypted TLS channel</p>
+            <button type="submit" class="px-6 py-3 text-xs font-semibold text-white bg-brand-green hover:bg-brand-dark rounded transition-all">
+              Transmit Proposal
             </button>
           </div>
         </form>
 
         <!-- Stateful Success Overlay (Hidden initially) -->
-        <div id="waitlist-success" class="hidden absolute inset-0 bg-white/98 rounded-3xl flex flex-col items-center justify-center text-center p-8 space-y-6">
+        <div id="success-overlay" class="hidden absolute inset-0 bg-white/98 rounded-2xl flex flex-col items-center justify-center text-center p-8 space-y-6">
           <div class="w-14 h-14 rounded-full border border-brand-sage flex items-center justify-center text-brand-sage text-2xl font-bold">
             ✓
           </div>
-          <h3 class="text-2xl font-light text-brand-dark font-serif">Waitlist Spot Registered</h3>
+          <h3 class="text-2xl font-light text-brand-dark font-serif">Proposal Transmitted</h3>
           <p class="text-brand-muted text-xs max-w-sm font-light leading-relaxed">
-            Your invitation request has been securely written to our local InstantDB schema (`3d183980...ff6d`). An access link will be delivered once your device compatibility tier is verified.
+            Your strategic partnership request has been securely logged and indexed into the Community of Voices (CoV) database. Our administrative leads will review the operational bounds and reach out within 48 business hours.
           </p>
-          <button onclick="resetWaitlist()" class="px-5 py-2 text-xs font-semibold text-brand-dark hover:bg-brand-dark hover:text-white border border-brand-border rounded-full transition-colors">
-            Return to Site
+          <button onclick="resetForm()" class="px-5 py-2 text-xs font-semibold text-brand-dark hover:bg-brand-dark hover:text-white border border-brand-border rounded transition-colors">
+            Submit Another Proposal
           </button>
         </div>
 
@@ -407,92 +614,79 @@
     </div>
   </section>
 
-  <!-- Developer API Integrations -->
-  <section id="integration" class="py-24 bg-white border-t border-brand-border relative">
-    <div class="max-w-6xl mx-auto px-6">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
-        
-        <!-- Code / Integration display -->
-        <div class="lg:col-span-7 space-y-4">
-          <div class="bg-brand-dark text-white p-6 rounded-3xl shadow-lg border border-white/5 font-mono text-xs overflow-x-auto relative">
-            <div class="absolute top-4 right-4 flex items-center space-x-1.5">
-              <span class="w-2 h-2 rounded-full bg-brand-accent"></span>
-              <span class="text-[9px] text-brand-muted">CIE2000 API v1.2</span>
-            </div>
-            <p class="text-brand-muted mb-2">// Calculate CIE2000 Delta E on skin HEX inputs</p>
-            <pre class="text-[#e6e2de] leading-relaxed">
-<span class="text-brand-accent">const</span> <span class="text-[#8ea89d]">calculateDeltaE2000</span> = (hex1, hex2) => {
-  <span class="text-brand-accent">const</span> lab1 = <span class="text-[#8ea89d]">hexToLab</span>(hex1);
-  <span class="text-brand-accent">const</span> lab2 = <span class="text-[#8ea89d]">hexToLab</span>(hex2);
-  
-  <span class="text-brand-accent">return</span> <span class="text-[#8ea89d]">deltaE2000</span>(lab1, lab2); 
-};
-
-<span class="text-brand-muted">// Sample output for matching foundations</span>
-<span class="text-brand-accent">const</span> match = <span class="text-[#8ea89d]">calculateDeltaE2000</span>(<span class="text-brand-accent">'#f2d5c4'</span>, <span class="text-brand-accent">'#eed1bc'</span>);
-console.<span class="text-[#8ea89d]">log</span>(<span class="text-brand-accent">`Delta E: ${match.toFixed(2)}`</span>); 
-<span class="text-brand-muted">// Output: Delta E: 1.14 (Indistinguishable match ✓)</span></pre>
-          </div>
-        </div>
-
-        <!-- Text details -->
-        <div class="lg:col-span-5 space-y-6">
-          <span class="text-xs font-semibold text-brand-accent uppercase tracking-wider font-mono">Developer Portal</span>
-          <h3 class="text-4xl font-light text-brand-dark tracking-tight font-serif leading-tight">Integrate the shade matching engine.</h3>
-          <p class="text-brand-muted text-sm font-light leading-relaxed">
-            Are you a cosmetic manufacturer, retailer, or developer? Our CIE2000 color matching algorithm and barcoded safety audit APIs are available for secure integration. 
-          </p>
-          <a href="#waitlist" class="inline-flex items-center justify-center px-6 py-3 text-xs font-semibold text-white bg-brand-dark hover:bg-brand-accent rounded-full transition-colors">
-            Request API Credentials
-          </a>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
   <!-- Footer -->
-  <footer class="bg-[#faf8f5] border-t border-brand-border py-16 text-xs text-brand-muted">
+  <footer class="bg-[#faf9f6] border-t border-brand-border py-16 text-xs text-brand-muted">
     <div class="max-w-6xl mx-auto px-6 space-y-6">
       <div class="flex flex-col sm:flex-row items-center justify-between gap-6 border-b border-brand-border pb-12">
-        <span class="font-serif text-2xl text-brand-dark">Re<span class="italic font-light">Make</span></span>
+        <span class="font-serif text-2xl text-brand-dark">Community <span class="italic font-light">of Voices</span></span>
         <div class="flex items-center space-x-8">
-          <a href="#concept" class="hover:text-brand-dark transition-colors">The Concept</a>
-          <a href="#engine" class="hover:text-brand-dark transition-colors">The Engine</a>
-          <a href="#showcase" class="hover:text-brand-dark transition-colors">App Showcase</a>
-          <a href="#waitlist" class="hover:text-brand-dark transition-colors">Join Waitlist</a>
+          <a href="#gap" class="hover:text-brand-dark transition-colors">Social Gap</a>
+          <a href="#pedagogy" class="hover:text-brand-dark transition-colors">Pedagogy</a>
+          <a href="#work" class="hover:text-brand-dark transition-colors">Actual Work</a>
+          <a href="#coalition" class="hover:text-brand-dark transition-colors">The Coalition</a>
         </div>
       </div>
       <div class="flex flex-col sm:flex-row items-center justify-between text-brand-muted gap-4">
-        <p>&copy; 2026 ReMake App Inc. All rights reserved.</p>
-        <p class="font-mono">InstantDB Active Schema • Private Beta Tiers Enforced</p>
+        <p>&copy; 2026 Community of Voices. All rights reserved.</p>
+        <p class="font-mono">Secure Node: desktop-j70mh4o • OpenClaw Gateway Connected</p>
       </div>
     </div>
   </footer>
 
   <script>
-    // Stateful form handling for Waitlist
-    function handleWaitlistSubmit(event) {
-      event.preventDefault();
-      
-      const honeypot = document.getElementById('spam-trap').value;
-      if (honeypot) {
-        return; // Filter bot spam
+    // Mock interactive data for GoAsk simulator
+    const sims = {
+      1: {
+        prompt: 'She went to school after she had finished her breakfast.',
+        output: `呢句用咗兩個過去動作。
+                <br><br>
+                • <strong>Had finished her breakfast</strong>（食完早餐）- 呢個動作<strong>最先發生</strong>，所以用「過去完成式」(Had + V3)。
+                <br>
+                • <strong>Went to school</strong>（去返學）- 呢個係簡簡單單<strong>之後發生</strong>嘅事，所以用「簡單過去式」(V2)。`
+      },
+      2: {
+        prompt: 'The English lesson was thoroughly explained by the Wis tutor.',
+        output: `呢句用咗<strong>被動語態 (Passive Voice)</strong>，將接受動作嘅物件放喺前面：
+                <br><br>
+                • <strong>The English lesson was thoroughly explained</strong> - 英文堂被徹底地解釋（動作承受者 + be動詞 + 過去分詞）。
+                <br>
+                • <strong>by the Wis tutor</strong> - 由 WIS 導師進行（用 "by" 指明動作執行者）。`
       }
+    };
 
-      const email = document.getElementById('user-email').value;
-      const device = document.getElementById('device-type').value;
-      const concern = document.getElementById('focal-concern').value;
-
-      console.log('Logging waitlist registry:', { email, device, concern, timestamp: new Date().toISOString() });
-      
-      // Trigger smooth CSS fade-in overlay
-      document.getElementById('waitlist-success').classList.remove('hidden');
+    function changeSim(id) {
+      if (sims[id]) {
+        document.getElementById('sim-prompt').innerText = sims[id].prompt;
+        document.getElementById('sim-output').innerHTML = sims[id].output;
+      }
     }
 
-    function resetWaitlist() {
-      document.getElementById('waitlist-form').reset();
-      document.getElementById('waitlist-success').classList.add('hidden');
+    // Stateful form handling
+    function handleFormSubmit(event) {
+      event.preventDefault();
+      
+      const honeypot = document.getElementById('spam-check').value;
+      if (honeypot) {
+        return;
+      }
+
+      // Collect data
+      const data = {
+        name: document.getElementById('contact-name').value,
+        email: document.getElementById('contact-email').value,
+        institution: document.getElementById('institution').value,
+        role: document.getElementById('role-type').value,
+        proposal: document.getElementById('proposal-desc').value,
+        timestamp: new Date().toISOString()
+      };
+
+      console.log('Logging Form Data:', data);
+      document.getElementById('success-overlay').classList.remove('hidden');
+    }
+
+    function resetForm() {
+      document.getElementById('partnership-form').reset();
+      document.getElementById('success-overlay').classList.add('hidden');
     }
   </script>
 </body>
