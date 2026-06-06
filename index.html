@@ -72,6 +72,15 @@
     .glow-hover:hover {
       box-shadow: 0 0 25px rgba(113, 112, 255, 0.25);
     }
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
   </style>
 
   <!-- Structured Data / JSON-LD for Google Rich Snippets -->
@@ -94,12 +103,12 @@
       "name": "Kyle Cheung"
     },
     "sameAs": [
-      "https://github.com/kyzltrade-cpu/remake-waitlist-app"
+      "https://github.com/kyzltrade-cpu/community-of-voices"
     ]
   }
   </script>
 </head>
-<body class="font-sans antialiased selection:bg-brand-indigo selection:text-white">
+<body class="font-sans antialiased selection:bg-brand-indigo selection:text-white text-brand-muted">
 
   <!-- Header / Navigation -->
   <header class="fixed top-0 left-0 right-0 z-50 frosted border-b border-white/5 neon-border transition-all duration-300">
@@ -116,6 +125,7 @@
       <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-brand-muted">
         <a href="#about" class="hover:text-white transition-colors">The Gap</a>
         <a href="#solution" class="hover:text-white transition-colors">Our Pedagogy</a>
+        <a href="#research" class="hover:text-white transition-colors">Academic Blueprint</a>
         <a href="#goask" class="hover:text-white transition-colors">GoAsk Tech</a>
         <a href="#coalition" class="hover:text-white transition-colors">Coalition</a>
         <a href="#partnership" class="hover:text-white transition-colors">Partnership</a>
@@ -287,7 +297,7 @@
     </div>
   </section>
 
-  <!-- The Methodology / Solution Contrast -->
+  <!-- Our Pedagogy / Solution Contrast -->
   <section id="solution" class="py-24 relative overflow-hidden">
     <div class="max-w-7xl mx-auto px-6">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
@@ -353,8 +363,205 @@
     </div>
   </section>
 
+  <!-- NEW SECTION: Academic Research & Evidence Gallery (Professional Blend with Crop Imgs) -->
+  <section id="research" class="py-24 bg-brand-panel border-y border-white/5 relative">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+        <h2 class="text-xs font-semibold text-brand-indigo uppercase tracking-wider font-mono">Academic Foundation</h2>
+        <p class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Project Proposal & Research Papers</p>
+        <p class="text-brand-muted font-light leading-relaxed text-sm">
+          Our operational methodology is built on academic literature and strategic blueprints. Explore our original, verified initial project proposals and the 10-page annotated bibliography detailing the structural pedagogy of our focal group.
+        </p>
+      </div>
+
+      <!-- Tab Buttons -->
+      <div class="flex items-center justify-center space-x-4 mb-12">
+        <button id="btn-prop" onclick="toggleResearchTab('prop')" class="px-6 py-2.5 rounded-xl text-xs font-semibold transition-all border border-brand-indigo/30 bg-brand-indigo text-white shadow-lg shadow-brand-indigo/10">
+          📄 Initial Project Proposal (4 Pages)
+        </button>
+        <button id="btn-bib" onclick="toggleResearchTab('bib')" class="px-6 py-2.5 rounded-xl text-xs font-semibold transition-all border border-white/5 bg-brand-black text-brand-muted hover:text-white">
+          📚 Annotated Bibliography (10 Pages)
+        </button>
+      </div>
+
+      <!-- PROPOSAL GRID -->
+      <div id="tab-prop-content" class="space-y-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Page 0 -->
+          <div class="bg-brand-black border border-white/5 rounded-2xl overflow-hidden group hover:border-brand-indigo/30 transition-all">
+            <div class="p-2 bg-brand-panel flex justify-center items-center h-80 overflow-hidden relative">
+              <img src="images/cropped_imgs/prop_0.png" class="h-full w-auto object-cover rounded-lg group-hover:scale-[1.02] transition-transform mix-blend-normal" alt="Proposal Page 1" />
+              <div class="absolute inset-0 bg-gradient-to-t from-brand-black/40 to-transparent"></div>
+            </div>
+            <div class="p-5 space-y-2">
+              <span class="text-[10px] font-mono text-brand-violet uppercase">Blueprint • Page 1</span>
+              <h4 class="text-sm font-bold text-white group-hover:text-brand-violet transition-colors">Boundary Discovery</h4>
+              <p class="text-xs text-brand-muted">Scope of the bilingual scaffolding approach and focal constraints.</p>
+            </div>
+          </div>
+          <!-- Page 1 -->
+          <div class="bg-brand-black border border-white/5 rounded-2xl overflow-hidden group hover:border-brand-indigo/30 transition-all">
+            <div class="p-2 bg-brand-panel flex justify-center items-center h-80 overflow-hidden relative">
+              <img src="images/cropped_imgs/prop_1.png" class="h-full w-auto object-cover rounded-lg group-hover:scale-[1.02] transition-transform mix-blend-normal" alt="Proposal Page 2" />
+              <div class="absolute inset-0 bg-gradient-to-t from-brand-black/40 to-transparent"></div>
+            </div>
+            <div class="p-5 space-y-2">
+              <span class="text-[10px] font-mono text-brand-violet uppercase">Blueprint • Page 2</span>
+              <h4 class="text-sm font-bold text-white group-hover:text-brand-violet transition-colors">Action & Timeline</h4>
+              <p class="text-xs text-brand-muted">Operational phases and strategic milestones mapping across school terms.</p>
+            </div>
+          </div>
+          <!-- Page 2 -->
+          <div class="bg-brand-black border border-white/5 rounded-2xl overflow-hidden group hover:border-brand-indigo/30 transition-all">
+            <div class="p-2 bg-brand-panel flex justify-center items-center h-80 overflow-hidden relative">
+              <img src="images/cropped_imgs/prop_2.png" class="h-full w-auto object-cover rounded-lg group-hover:scale-[1.02] transition-transform mix-blend-normal" alt="Proposal Page 3" />
+              <div class="absolute inset-0 bg-gradient-to-t from-brand-black/40 to-transparent"></div>
+            </div>
+            <div class="p-5 space-y-2">
+              <span class="text-[10px] font-mono text-brand-violet uppercase">Blueprint • Page 3</span>
+              <h4 class="text-sm font-bold text-white group-hover:text-brand-violet transition-colors">Linguistic Scaffolding</h4>
+              <p class="text-xs text-brand-muted">Design framework for Cantonese explanations and English homework output.</p>
+            </div>
+          </div>
+          <!-- Page 3 -->
+          <div class="bg-brand-black border border-white/5 rounded-2xl overflow-hidden group hover:border-brand-indigo/30 transition-all">
+            <div class="p-2 bg-brand-panel flex justify-center items-center h-80 overflow-hidden relative">
+              <img src="images/cropped_imgs/prop_3.png" class="h-full w-auto object-cover rounded-lg group-hover:scale-[1.02] transition-transform mix-blend-normal" alt="Proposal Page 4" />
+              <div class="absolute inset-0 bg-gradient-to-t from-brand-black/40 to-transparent"></div>
+            </div>
+            <div class="p-5 space-y-2">
+              <span class="text-[10px] font-mono text-brand-violet uppercase">Blueprint • Page 4</span>
+              <h4 class="text-sm font-bold text-white group-hover:text-brand-violet transition-colors">Impact & Tech Integration</h4>
+              <p class="text-xs text-brand-muted">GoAsk AI platform licensing integration and partnership expansion plans.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BIBLIOGRAPHY GRID (Horizontal scrollable with 10 pages) -->
+      <div id="tab-bib-content" class="hidden space-y-6">
+        <p class="text-xs text-brand-muted text-center italic mb-4">Swipe/Scroll horizontally to view the full 10-page annotated literature review:</p>
+        <div class="flex space-x-6 overflow-x-auto pb-6 no-scrollbar snap-x snap-mandatory">
+          
+          <!-- Page cards generated programmatically by index mapping -->
+          <div class="w-80 shrink-0 bg-brand-black border border-white/5 rounded-2xl overflow-hidden group hover:border-brand-indigo/30 transition-all snap-start">
+            <div class="p-2 bg-brand-panel flex justify-center items-center h-96 overflow-hidden relative">
+              <img src="images/cropped_imgs/bib_0.png" class="h-full w-auto object-cover rounded-lg group-hover:scale-[1.02] transition-transform" />
+            </div>
+            <div class="p-5 space-y-1">
+              <span class="text-[10px] font-mono text-brand-violet uppercase">Literature Review • Page 1</span>
+              <h4 class="text-sm font-bold text-white">Socio-Economic Inequality</h4>
+              <p class="text-[11px] text-brand-muted">Initial mapping of income disparities and time poverty in HK.</p>
+            </div>
+          </div>
+
+          <div class="w-80 shrink-0 bg-brand-black border border-white/5 rounded-2xl overflow-hidden group hover:border-brand-indigo/30 transition-all snap-start">
+            <div class="p-2 bg-brand-panel flex justify-center items-center h-96 overflow-hidden relative">
+              <img src="images/cropped_imgs/bib_1.png" class="h-full w-auto object-cover rounded-lg group-hover:scale-[1.02] transition-transform" />
+            </div>
+            <div class="p-5 space-y-1">
+              <span class="text-[10px] font-mono text-brand-violet uppercase">Literature Review • Page 2</span>
+              <h4 class="text-sm font-bold text-white">Single Mother Head of Households</h4>
+              <p class="text-[11px] text-brand-muted">Analyzing labor force participation and childcare constraints.</p>
+            </div>
+          </div>
+
+          <div class="w-80 shrink-0 bg-brand-black border border-white/5 rounded-2xl overflow-hidden group hover:border-brand-indigo/30 transition-all snap-start">
+            <div class="p-2 bg-brand-panel flex justify-center items-center h-96 overflow-hidden relative">
+              <img src="images/cropped_imgs/bib_2.png" class="h-full w-auto object-cover rounded-lg group-hover:scale-[1.02] transition-transform" />
+            </div>
+            <div class="p-5 space-y-1">
+              <span class="text-[10px] font-mono text-brand-violet uppercase">Literature Review • Page 3</span>
+              <h4 class="text-sm font-bold text-white">The English Divide</h4>
+              <p class="text-[11px] text-brand-muted">Examing English language requirements in secondary education streams.</p>
+            </div>
+          </div>
+
+          <div class="w-80 shrink-0 bg-brand-black border border-white/5 rounded-2xl overflow-hidden group hover:border-brand-indigo/30 transition-all snap-start">
+            <div class="p-2 bg-brand-panel flex justify-center items-center h-96 overflow-hidden relative">
+              <img src="images/cropped_imgs/bib_3.png" class="h-full w-auto object-cover rounded-lg group-hover:scale-[1.02] transition-transform" />
+            </div>
+            <div class="p-5 space-y-1">
+              <span class="text-[10px] font-mono text-brand-violet uppercase">Literature Review • Page 4</span>
+              <h4 class="text-sm font-bold text-white">Traditional Charities Analysis</h4>
+              <p class="text-[11px] text-brand-muted">Limits of classic cash donations or uncoordinated volunteer visits.</p>
+            </div>
+          </div>
+
+          <div class="w-80 shrink-0 bg-brand-black border border-white/5 rounded-2xl overflow-hidden group hover:border-brand-indigo/30 transition-all snap-start">
+            <div class="p-2 bg-brand-panel flex justify-center items-center h-96 overflow-hidden relative">
+              <img src="images/cropped_imgs/bib_4.png" class="h-full w-auto object-cover rounded-lg group-hover:scale-[1.02] transition-transform" />
+            </div>
+            <div class="p-5 space-y-1">
+              <span class="text-[10px] font-mono text-brand-violet uppercase">Literature Review • Page 5</span>
+              <h4 class="text-sm font-bold text-white">Bilingual Scaffolding Method</h4>
+              <p class="text-[11px] text-brand-muted">Theoretical validation for Cantonese-scaffolded English acquisition.</p>
+            </div>
+          </div>
+
+          <div class="w-80 shrink-0 bg-brand-black border border-white/5 rounded-2xl overflow-hidden group hover:border-brand-indigo/30 transition-all snap-start">
+            <div class="p-2 bg-brand-panel flex justify-center items-center h-96 overflow-hidden relative">
+              <img src="images/cropped_imgs/bib_5.png" class="h-full w-auto object-cover rounded-lg group-hover:scale-[1.02] transition-transform" />
+            </div>
+            <div class="p-5 space-y-1">
+              <span class="text-[10px] font-mono text-brand-violet uppercase">Literature Review • Page 6</span>
+              <h4 class="text-sm font-bold text-white">EdTech in Low-Income Classes</h4>
+              <p class="text-[11px] text-brand-muted">How hardware/software access limits home study options.</p>
+            </div>
+          </div>
+
+          <div class="w-80 shrink-0 bg-brand-black border border-white/5 rounded-2xl overflow-hidden group hover:border-brand-indigo/30 transition-all snap-start">
+            <div class="p-2 bg-brand-panel flex justify-center items-center h-96 overflow-hidden relative">
+              <img src="images/cropped_imgs/bib_6.png" class="h-full w-auto object-cover rounded-lg group-hover:scale-[1.02] transition-transform" />
+            </div>
+            <div class="p-5 space-y-1">
+              <span class="text-[10px] font-mono text-brand-violet uppercase">Literature Review • Page 7</span>
+              <h4 class="text-sm font-bold text-white">AI Language Models Evaluation</h4>
+              <p class="text-[11px] text-brand-muted">Assessing LLM Cantonese understanding vs standard translation engines.</p>
+            </div>
+          </div>
+
+          <div class="w-80 shrink-0 bg-brand-black border border-white/5 rounded-2xl overflow-hidden group hover:border-brand-indigo/30 transition-all snap-start">
+            <div class="p-2 bg-brand-panel flex justify-center items-center h-96 overflow-hidden relative">
+              <img src="images/cropped_imgs/bib_7.png" class="h-full w-auto object-cover rounded-lg group-hover:scale-[1.02] transition-transform" />
+            </div>
+            <div class="p-5 space-y-1">
+              <span class="text-[10px] font-mono text-brand-violet uppercase">Literature Review • Page 8</span>
+              <h4 class="text-sm font-bold text-white">Community Integration</h4>
+              <p class="text-[11px] text-brand-muted">Mobilizing international school resources to support local center networks.</p>
+            </div>
+          </div>
+
+          <div class="w-80 shrink-0 bg-brand-black border border-white/5 rounded-2xl overflow-hidden group hover:border-brand-indigo/30 transition-all snap-start">
+            <div class="p-2 bg-brand-panel flex justify-center items-center h-96 overflow-hidden relative">
+              <img src="images/cropped_imgs/bib_8.png" class="h-full w-auto object-cover rounded-lg group-hover:scale-[1.02] transition-transform" />
+            </div>
+            <div class="p-5 space-y-1">
+              <span class="text-[10px] font-mono text-brand-violet uppercase">Literature Review • Page 9</span>
+              <h4 class="text-sm font-bold text-white">Sustainable Volunteer Models</h4>
+              <p class="text-[11px] text-brand-muted">Structural methods to avoid volunteer churn during exam seasons.</p>
+            </div>
+          </div>
+
+          <div class="w-80 shrink-0 bg-brand-black border border-white/5 rounded-2xl overflow-hidden group hover:border-brand-indigo/30 transition-all snap-start">
+            <div class="p-2 bg-brand-panel flex justify-center items-center h-96 overflow-hidden relative">
+              <img src="images/cropped_imgs/bib_9.png" class="h-full w-auto object-cover rounded-lg group-hover:scale-[1.02] transition-transform" />
+            </div>
+            <div class="p-5 space-y-1">
+              <span class="text-[10px] font-mono text-brand-violet uppercase">Literature Review • Page 10</span>
+              <h4 class="text-sm font-bold text-white">Conclusions & Guidelines</h4>
+              <p class="text-[11px] text-brand-muted">Linguistically precise and temporally flexible education design.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
   <!-- GoAsk AI Tech Section -->
-  <section id="goask" class="py-24 bg-brand-panel border-y border-white/5 relative">
+  <section id="goask" class="py-24 relative">
     <div class="max-w-7xl mx-auto px-6 text-center">
       <div class="max-w-3xl mx-auto space-y-4 mb-20">
         <h2 class="text-xs font-semibold text-brand-indigo uppercase tracking-wider font-mono">The Technology</h2>
@@ -366,7 +573,7 @@
 
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
         
-        <div class="bg-brand-black border border-white/5 rounded-xl p-6 text-left space-y-4">
+        <div class="bg-brand-panel border border-white/5 rounded-xl p-6 text-left space-y-4">
           <div class="text-brand-indigo font-mono text-sm">01</div>
           <h4 class="text-lg font-bold text-white">Localized Explanation</h4>
           <p class="text-xs text-brand-muted leading-relaxed">
@@ -374,7 +581,7 @@
           </p>
         </div>
 
-        <div class="bg-brand-black border border-white/5 rounded-xl p-6 text-left space-y-4">
+        <div class="bg-brand-panel border border-white/5 rounded-xl p-6 text-left space-y-4">
           <div class="text-brand-indigo font-mono text-sm">02</div>
           <h4 class="text-lg font-bold text-white">24/7 Availability</h4>
           <p class="text-xs text-brand-muted leading-relaxed">
@@ -382,7 +589,7 @@
           </p>
         </div>
 
-        <div class="bg-brand-black border border-white/5 rounded-xl p-6 text-left space-y-4">
+        <div class="bg-brand-panel border border-white/5 rounded-xl p-6 text-left space-y-4">
           <div class="text-brand-indigo font-mono text-sm">03</div>
           <h4 class="text-lg font-bold text-white">Structured Accounts</h4>
           <p class="text-xs text-brand-muted leading-relaxed">
@@ -390,7 +597,7 @@
           </p>
         </div>
 
-        <div class="bg-brand-black border border-white/5 rounded-xl p-6 text-left space-y-4">
+        <div class="bg-brand-panel border border-white/5 rounded-xl p-6 text-left space-y-4">
           <div class="text-brand-indigo font-mono text-sm">04</div>
           <h4 class="text-lg font-bold text-white">Progress Monitoring</h4>
           <p class="text-xs text-brand-muted leading-relaxed">
@@ -403,7 +610,7 @@
   </section>
 
   <!-- Coalition & Alliances -->
-  <section id="coalition" class="py-24 relative">
+  <section id="coalition" class="py-24 bg-brand-panel border-t border-white/5 relative">
     <div class="max-w-7xl mx-auto px-6">
       <div class="text-center max-w-3xl mx-auto space-y-4 mb-20">
         <h2 class="text-xs font-semibold text-brand-indigo uppercase tracking-wider font-mono">The Alliance</h2>
@@ -414,23 +621,23 @@
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 text-center">
-        <div class="p-6 rounded-xl bg-brand-panel border border-white/5 flex flex-col justify-center items-center">
+        <div class="p-6 rounded-xl bg-brand-black border border-white/5 flex flex-col justify-center items-center">
           <div class="font-bold text-sm text-white">HKIS</div>
           <div class="text-[10px] text-brand-muted mt-1">Hong Kong International School</div>
         </div>
-        <div class="p-6 rounded-xl bg-brand-panel border border-white/5 flex flex-col justify-center items-center">
+        <div class="p-6 rounded-xl bg-brand-black border border-white/5 flex flex-col justify-center items-center">
           <div class="font-bold text-sm text-white">WIS</div>
           <div class="text-[10px] text-brand-muted mt-1">West Island School</div>
         </div>
-        <div class="p-6 rounded-xl bg-brand-panel border border-white/5 flex flex-col justify-center items-center">
+        <div class="p-6 rounded-xl bg-brand-black border border-white/5 flex flex-col justify-center items-center">
           <div class="font-bold text-sm text-white">SIS</div>
           <div class="text-[10px] text-brand-muted mt-1">South Island School</div>
         </div>
-        <div class="p-6 rounded-xl bg-brand-panel border border-white/5 flex flex-col justify-center items-center">
+        <div class="p-6 rounded-xl bg-brand-black border border-white/5 flex flex-col justify-center items-center">
           <div class="font-bold text-sm text-white">Stamford</div>
           <div class="text-[10px] text-brand-muted mt-1">Stamford American School</div>
         </div>
-        <div class="p-6 rounded-xl bg-brand-panel border border-white/5 flex flex-col justify-center items-center">
+        <div class="p-6 rounded-xl bg-brand-black border border-white/5 flex flex-col justify-center items-center">
           <div class="font-bold text-sm text-white">FIS</div>
           <div class="text-[10px] text-brand-muted mt-1">French International School</div>
         </div>
@@ -453,7 +660,7 @@
   </section>
 
   <!-- Interactive Partnership Form -->
-  <section id="partnership" class="py-24 bg-brand-panel border-t border-white/5 relative">
+  <section id="partnership" class="py-24 relative overflow-hidden">
     <div class="max-w-4xl mx-auto px-6">
       <div class="text-center space-y-4 mb-16">
         <h2 class="text-xs font-semibold text-brand-indigo uppercase tracking-wider font-mono">Formalization Portal</h2>
@@ -464,27 +671,27 @@
       </div>
 
       <!-- Form Card -->
-      <div class="bg-brand-black border border-white/10 rounded-3xl p-8 shadow-2xl relative">
+      <div class="bg-brand-panel border border-white/10 rounded-3xl p-8 shadow-2xl relative">
         <form id="partnership-form" onsubmit="handleFormSubmit(event)" class="space-y-6">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <label for="contact-name" class="block text-xs font-medium text-brand-muted uppercase tracking-wider mb-2">Full Name</label>
-              <input type="text" id="contact-name" required class="w-full bg-brand-panel border border-white/5 hover:border-white/10 focus:border-brand-indigo rounded-xl px-4 py-3 text-sm text-white focus:outline-none transition-colors" placeholder="e.g. Eryao Wong">
+              <input type="text" id="contact-name" required class="w-full bg-brand-black border border-white/5 hover:border-white/10 focus:border-brand-indigo rounded-xl px-4 py-3 text-sm text-white focus:outline-none transition-colors" placeholder="e.g. Eryao Wong">
             </div>
             <div>
               <label for="contact-email" class="block text-xs font-medium text-brand-muted uppercase tracking-wider mb-2">Email Address</label>
-              <input type="email" id="contact-email" required class="w-full bg-brand-panel border border-white/5 hover:border-white/10 focus:border-brand-indigo rounded-xl px-4 py-3 text-sm text-white focus:outline-none transition-colors" placeholder="e.g. contact@organisation.org">
+              <input type="email" id="contact-email" required class="w-full bg-brand-black border border-white/5 hover:border-white/10 focus:border-brand-indigo rounded-xl px-4 py-3 text-sm text-white focus:outline-none transition-colors" placeholder="e.g. contact@organisation.org">
             </div>
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <label for="institution" class="block text-xs font-medium text-brand-muted uppercase tracking-wider mb-2">Institution Name</label>
-              <input type="text" id="institution" required class="w-full bg-brand-panel border border-white/5 hover:border-white/10 focus:border-brand-indigo rounded-xl px-4 py-3 text-sm text-white focus:outline-none transition-colors" placeholder="e.g. JOS Singapore / HKBN JOS">
+              <input type="text" id="institution" required class="w-full bg-brand-black border border-white/5 hover:border-white/10 focus:border-brand-indigo rounded-xl px-4 py-3 text-sm text-white focus:outline-none transition-colors" placeholder="e.g. JOS Singapore / HKBN JOS">
             </div>
             <div>
               <label for="role-type" class="block text-xs font-medium text-brand-muted uppercase tracking-wider mb-2">Partnership Class</label>
-              <select id="role-type" class="w-full bg-brand-panel border border-white/5 hover:border-white/10 focus:border-brand-indigo rounded-xl px-4 py-3 text-sm text-white focus:outline-none transition-colors">
+              <select id="role-type" class="w-full bg-brand-black border border-white/5 hover:border-white/10 focus:border-brand-indigo rounded-xl px-4 py-3 text-sm text-white focus:outline-none transition-colors">
                 <option value="school">International School Coalition</option>
                 <option value="center">Local Community Center</option>
                 <option value="corporate">Corporate Tech Partner (Sponsor)</option>
@@ -495,7 +702,7 @@
 
           <div>
             <label for="proposal-desc" class="block text-xs font-medium text-brand-muted uppercase tracking-wider mb-2">Partnership Objective / Proposal</label>
-            <textarea id="proposal-desc" rows="4" required class="w-full bg-brand-panel border border-white/5 hover:border-white/10 focus:border-brand-indigo rounded-xl px-4 py-3 text-sm text-white focus:outline-none transition-colors" placeholder="Briefly describe your objectives, needed student licenses, or proposed volunteer support framework..."></textarea>
+            <textarea id="proposal-desc" rows="4" required class="w-full bg-brand-black border border-white/5 hover:border-white/10 focus:border-brand-indigo rounded-xl px-4 py-3 text-sm text-white focus:outline-none transition-colors" placeholder="Briefly describe your objectives, needed student licenses, or proposed volunteer support framework..."></textarea>
           </div>
 
           <!-- Hidden Honeypot for simple spam protection -->
@@ -540,6 +747,7 @@
         <div class="flex items-center space-x-6">
           <a href="#about" class="hover:text-white transition-colors">About</a>
           <a href="#solution" class="hover:text-white transition-colors">Pedagogy</a>
+          <a href="#research" class="hover:text-white transition-colors">Academic Blueprint</a>
           <a href="#goask" class="hover:text-white transition-colors">GoAsk Tech</a>
           <a href="#coalition" class="hover:text-white transition-colors">Coalition</a>
         </div>
@@ -552,6 +760,26 @@
   </footer>
 
   <script>
+    // Tab switching logic for Academic Evidence
+    function toggleResearchTab(tab) {
+      const btnProp = document.getElementById('btn-prop');
+      const btnBib = document.getElementById('btn-bib');
+      const propContent = document.getElementById('tab-prop-content');
+      const bibContent = document.getElementById('tab-bib-content');
+
+      if (tab === 'prop') {
+        btnProp.className = "px-6 py-2.5 rounded-xl text-xs font-semibold transition-all border border-brand-indigo/30 bg-brand-indigo text-white shadow-lg shadow-brand-indigo/10";
+        btnBib.className = "px-6 py-2.5 rounded-xl text-xs font-semibold transition-all border border-white/5 bg-brand-black text-brand-muted hover:text-white";
+        propContent.classList.remove('hidden');
+        bibContent.classList.add('hidden');
+      } else {
+        btnBib.className = "px-6 py-2.5 rounded-xl text-xs font-semibold transition-all border border-brand-indigo/30 bg-brand-indigo text-white shadow-lg shadow-brand-indigo/10";
+        btnProp.className = "px-6 py-2.5 rounded-xl text-xs font-semibold transition-all border border-white/5 bg-brand-black text-brand-muted hover:text-white";
+        propContent.classList.add('hidden');
+        bibContent.classList.remove('hidden');
+      }
+    }
+
     // Mock interactive data for GoAsk simulator
     const mocks = {
       1: {
