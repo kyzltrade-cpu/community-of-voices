@@ -58,6 +58,20 @@
   </script>
 
   <style>
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    html::-webkit-scrollbar,
+    body::-webkit-scrollbar,
+    .no-scrollbar::-webkit-scrollbar,
+    .scrollbar-none::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    html, body, .no-scrollbar, .scrollbar-none {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+    }
+
     body {
       background-color: #faf9f6;
       color: #1f2421;
@@ -72,13 +86,6 @@
     }
     .editorial-shadow {
       box-shadow: 0 4px 30px rgba(42, 75, 58, 0.02);
-    }
-    .scrollbar-none::-webkit-scrollbar {
-        display: none;
-    }
-    .scrollbar-none {
-        -ms-overflow-style: none;
-        scrollbar-width: none;
     }
   </style>
 </head>
@@ -113,92 +120,61 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="relative min-h-screen pt-36 pb-20 flex items-center justify-center overflow-hidden bg-[#faf9f6]">
-    <div class="max-w-6xl mx-auto px-6 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+  <section class="relative min-h-screen pt-36 pb-20 flex items-center justify-start overflow-hidden bg-cover bg-center" style="background-image: url('images/work/volunteer_classroom.jpg');">
+    <!-- Sophisticated cinematic gradient overlay: dark on the left (for text contrast), transparent on the right (to showcase the sharp classroom photo) -->
+    <div class="absolute inset-0 bg-gradient-to-r from-[#1f2421]/95 via-[#1f2421]/60 to-transparent z-0"></div>
+    
+    <div class="max-w-6xl mx-auto px-6 relative z-10 w-full grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
       
-      <!-- Text Column -->
-      <div class="lg:col-span-7 space-y-8 text-left">
-        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-brand-green/5 border border-brand-green/10 text-brand-green text-xs font-medium uppercase tracking-wider">
+      <!-- Text and Metrics Left-Aligned Column (Occupies 7 out of 12 columns, leaving the right side wide open) -->
+      <div class="lg:col-span-7 space-y-8 text-left flex flex-col items-start">
+        
+        <!-- Award Badge -->
+        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-[#8ea89d] text-xs font-semibold uppercase tracking-wider">
           <span>🏆 SWD Silver Volunteer Award Recipient</span>
         </div>
         
-        <h1 class="text-6xl sm:text-7xl font-light tracking-tight text-brand-dark leading-[1.05] font-serif">
+        <!-- Headline -->
+        <h1 class="text-6xl sm:text-7xl md:text-8xl font-light tracking-tight text-white leading-[1.05] font-serif">
           Bilingual Scaffolding. <br>
-          <span class="italic font-light text-brand-green">Educational Equity.</span>
+          <span class="italic font-light text-[#8ea89d]">Educational Equity.</span>
         </h1>
         
-        <p class="text-base sm:text-lg text-brand-muted max-w-xl leading-relaxed font-light">
-          We do not believe in passive charity. <strong class="text-brand-dark font-medium">Community of Voices</strong> is a grassroots, peer-led coalition that bridges the English learning gap for children of single mothers in Hong Kong using high-fidelity bilingual tutoring and on-demand GoAsk technology.
+        <!-- Description -->
+        <p class="text-base sm:text-lg text-white/90 max-w-xl leading-relaxed font-light">
+          We do not believe in passive charity. <strong class="text-white font-medium">Community of Voices</strong> is a grassroots, peer-led coalition that bridges the English learning gap for children of single mothers in Hong Kong using high-fidelity bilingual tutoring and on-demand GoAsk technology.
         </p>
 
-        <div class="flex flex-col sm:flex-row items-center gap-4">
-          <a href="#partnership" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 text-sm font-semibold text-white bg-brand-dark hover:bg-brand-green rounded transition-all">
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
+          <a href="#partnership" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 text-sm font-semibold text-[#1f2421] bg-white hover:bg-[#8ea89d] rounded transition-all">
             Apply to Join the Coalition
           </a>
-          <a href="#work" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 text-sm font-semibold text-brand-muted hover:text-brand-dark bg-transparent border border-brand-border rounded transition-colors">
-            View Tutoring Evidence
+          <a href="#gap" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 text-sm font-semibold text-white bg-transparent border border-white/30 hover:border-white rounded transition-colors">
+            View Pedagogy Details
           </a>
         </div>
 
-        <div class="grid grid-cols-3 gap-8 pt-8 border-t border-brand-border text-left max-w-md">
+        <!-- Metrics -->
+        <div class="grid grid-cols-3 gap-8 pt-8 border-t border-white/15 text-left w-full max-w-md">
           <div>
-            <div class="text-3xl font-normal font-serif text-brand-dark">100+</div>
-            <div class="text-[10px] text-brand-muted mt-1 uppercase tracking-wider font-mono">Bilingual Hours</div>
+            <div class="text-3xl font-normal font-serif text-white">100+</div>
+            <div class="text-[10px] text-white/70 mt-1 uppercase tracking-wider font-mono">Bilingual Hours</div>
           </div>
           <div>
-            <div class="text-3xl font-normal font-serif text-brand-dark">20+</div>
-            <div class="text-[10px] text-brand-muted mt-1 uppercase tracking-wider font-mono">Active Tutors</div>
+            <div class="text-3xl font-normal font-serif text-white">20+</div>
+            <div class="text-[10px] text-white/70 mt-1 uppercase tracking-wider font-mono">Active Tutors</div>
           </div>
           <div>
-            <div class="text-3xl font-normal font-serif text-brand-dark">5 Schools</div>
-            <div class="text-[10px] text-brand-muted mt-1 uppercase tracking-wider font-mono">In Coalition</div>
+            <div class="text-3xl font-normal font-serif text-white">5 Schools</div>
+            <div class="text-[10px] text-white/70 mt-1 uppercase tracking-wider font-mono">In Coalition</div>
           </div>
         </div>
+
       </div>
 
-      <!-- Hero Visual (Interactive WhatsApp & Chat Log) -->
-      <div class="lg:col-span-5 relative w-full max-w-sm mx-auto">
-        <div class="absolute inset-0 bg-brand-green/5 rounded-full filter blur-3xl -z-10"></div>
-        
-        <!-- Live Chat Mockup (The Actual Work) -->
-        <div class="bg-white border border-brand-border rounded-2xl p-5 shadow-xl space-y-4">
-          <div class="flex items-center justify-between pb-3 border-b border-brand-border">
-            <div class="flex items-center space-x-2">
-              <span class="w-2.5 h-2.5 rounded-full bg-brand-green"></span>
-              <span class="text-xs font-semibold text-brand-dark">CoV Tutor Workspace Logs</span>
-            </div>
-            <span class="text-[10px] font-mono text-brand-muted">Active Session</span>
-          </div>
-
-          <!-- Phone Screen Mockup -->
-          <div class="bg-[#faf9f6] rounded-xl p-4 border border-brand-border space-y-4 text-xs">
-            <div class="space-y-1">
-              <p class="text-[9px] font-mono text-brand-muted">Kyle Cheung (Founder) @ CoV Tutors Group</p>
-              <div class="bg-white p-3 rounded-lg border border-brand-border text-brand-dark shadow-sm">
-                WIS tutors are fully confirmed for Methodists School on Tuesday. Ensure everyone uses the Cantonese scaffolding sheets!
-              </div>
-            </div>
-
-            <div class="space-y-1 text-right">
-              <p class="text-[9px] font-mono text-brand-muted">Stamford American Lead • 14:32</p>
-              <div class="bg-brand-green/10 p-3 rounded-lg border border-brand-green/20 text-brand-dark text-left inline-block max-w-[90%] shadow-sm">
-                Had a massive breakthrough with our Primary 5 boy today! He finally understood English past participles when we mapped it using the Cantonese scaffolding sheets.
-              </div>
-            </div>
-
-            <div class="space-y-1">
-              <p class="text-[9px] font-mono text-brand-muted">Ms. Ng (Community Center Supervisor)</p>
-              <div class="bg-white p-3 rounded-lg border border-brand-border text-brand-dark shadow-sm">
-                Thank you Kyle! The single mothers are so relieved that their kids are getting bilingual help. They can't thank you guys enough.
-              </div>
-            </div>
-          </div>
-
-          <div class="text-[10px] font-mono text-center text-brand-muted">
-            ⚡ Logging real grassroots communication and pedagogical impact.
-          </div>
-        </div>
-      </div>
+      <!-- Empty Column (Leaves the right 5/12 columns completely empty to showcase the beautiful classroom tutoring photo!) -->
+      <div class="hidden lg:block lg:col-span-5"></div>
 
     </div>
   </section>
@@ -347,143 +323,71 @@
         </p>
       </div>
 
-      <!-- Asymmetric Editorial Columns -->
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-16 items-start">
+
+
+      <!-- Grid of Service and Recognition -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
         
-        <!-- Left: Process Journal and Milestone Log -->
-        <div class="lg:col-span-8 bg-[#faf9f6] border border-brand-border rounded-2xl p-8 space-y-8">
-          <div class="border-b border-brand-border pb-4">
-            <h4 class="text-xl font-normal font-serif text-brand-dark">Bilingual Peer-Tutoring Milestones</h4>
-            <p class="text-xs text-brand-muted mt-1 font-mono">Process Journal Entries • 2024-2025</p>
+        <!-- Left: Structured Table of Service -->
+        <div class="lg:col-span-8 bg-[#faf9f6] border border-brand-border rounded-2xl p-6 md:p-8">
+          <div class="border-b border-brand-border pb-4 mb-6">
+            <h4 class="text-xl font-normal font-serif text-brand-dark">The Table of Service</h4>
+            <p class="text-xs text-brand-muted mt-1 font-mono">Systematic Action Stages (CoV Program)</p>
           </div>
 
-          <div class="space-y-6">
-            
-            <div class="flex items-start space-x-6 border-b border-brand-border/60 pb-6">
-              <span class="font-mono text-xs text-brand-muted shrink-0">Oct 14</span>
-              <div class="space-y-1">
-                <h5 class="text-sm font-semibold text-brand-dark">Diagnostic Discovery at Methodist Center</h5>
-                <p class="text-xs text-brand-muted font-light leading-relaxed">
-                  Conformed our first student cohorts. Discovered that teaching international school grammar rules directly in English results in complete confusion. Switched immediately to our Cantonese-scaffolding method, building a diagnostic bridge.
-                </p>
-              </div>
-            </div>
-
-            <div class="flex items-start space-x-6 border-b border-brand-border/60 pb-6">
-              <span class="font-mono text-xs text-brand-muted shrink-0">Nov 5</span>
-              <div class="space-y-1">
-                <h5 class="text-sm font-semibold text-brand-dark">The "Homework Time" Poverty Check</h5>
-                <p class="text-xs text-brand-muted font-light leading-relaxed">
-                  Ms. Ng reported that several single mothers are working 12+ hour retail shifts. Deployed the GoAsk AI digital licensing setup across 15 student accounts, establishing a secure homework safety net for after-school hours.
-                </p>
-              </div>
-            </div>
-
-            <div class="flex items-start space-x-6 border-b border-brand-border/60 pb-6">
-              <span class="font-mono text-xs text-brand-muted shrink-0">Jan 9</span>
-              <div class="space-y-1">
-                <h5 class="text-sm font-semibold text-brand-dark">Volunteer Hours Silver Award Validation</h5>
-                <p class="text-xs text-brand-muted font-light leading-relaxed">
-                  Recipients of the Silver Volunteer Hours Certificate (over 100 logged community hours). Validated our system metrics with Ms. Ng, showing substantial improvement in students' English syntax structures.
-                </p>
-              </div>
-            </div>
-
-            <div class="flex items-start space-x-6">
-              <span class="font-mono text-xs text-brand-muted shrink-0">Mar 5</span>
-              <div class="space-y-1">
-                <h5 class="text-sm font-semibold text-brand-dark">CUHK Partnership and Coalition Scaling</h5>
-                <p class="text-xs text-brand-muted font-light leading-relaxed">
-                  Onboarded 5 peer tutors from WIS and FIS. Formally secured 50 free GoAsk licenses via our CUHK-affiliated partner, establishing a reliable, self-sustaining tutorial framework.
-                </p>
-              </div>
-            </div>
-
+          <div class="overflow-x-auto no-scrollbar">
+            <table class="w-full text-left text-xs border-collapse">
+              <thead>
+                <tr class="border-b border-brand-border text-brand-dark uppercase tracking-wider font-mono text-[9px]">
+                  <th class="pb-3 w-1/4">Stage</th>
+                  <th class="pb-3 w-3/4">Scope of Activities</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-brand-border/60">
+                <tr>
+                  <td class="py-4 font-semibold text-brand-dark">1. Inventory & Investigation</td>
+                  <td class="py-4 font-light text-brand-muted leading-relaxed">Researching root causes, contacting local community centers, establishing linguistic baselines.</td>
+                </tr>
+                <tr>
+                  <td class="py-4 font-semibold text-brand-dark">2. Preparation & Planning</td>
+                  <td class="py-4 font-light text-brand-muted leading-relaxed">Securing partnerships, building Cantonese-explanation sheets, recruiting student peers.</td>
+                </tr>
+                <tr>
+                  <td class="py-4 font-semibold text-brand-dark">3. Action</td>
+                  <td class="py-4 font-light text-brand-muted leading-relaxed">Logging 100+ hours, coordinating tutor rotations, deploying initial GoAsk licenses to underfunded households.</td>
+                </tr>
+                <tr>
+                  <td class="py-4 font-semibold text-brand-dark">4. Reflection</td>
+                  <td class="py-4 font-light text-brand-muted leading-relaxed">Refining grammar scaffolding sheets, tracking student progress, monitoring software usage trends.</td>
+                </tr>
+                <tr>
+                  <td class="py-4 font-semibold text-brand-dark">5. Demonstration</td>
+                  <td class="py-4 font-light text-brand-muted leading-relaxed">Presenting program outcomes, formalizing educational technology license grants, and receiving the Silver Volunteer Award.</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
 
-        <!-- Right: The Official Silver Award Showcase (CSS Rendered) -->
-        <div class="lg:col-span-4 bg-[#faf9f6] border border-brand-border rounded-2xl p-6 text-center space-y-6">
-          <span class="text-[10px] font-mono text-brand-muted uppercase tracking-wider">Official Validation</span>
-          
-          <!-- Silver Certificate Mockup -->
-          <div class="border-2 border-dashed border-brand-border bg-white p-6 rounded-xl space-y-4 shadow-sm relative">
-            <div class="absolute -top-3 -right-3 w-8 h-8 rounded-full bg-brand-gold flex items-center justify-center font-bold text-xs text-white">
-              ★
-            </div>
+        <!-- Right: Official Recognition & Certificate -->
+        <div class="lg:col-span-4 bg-[#faf9f6] border border-brand-border rounded-2xl p-6 text-center space-y-6 flex flex-col justify-between">
+          <div class="space-y-4">
+            <span class="text-[10px] font-mono text-brand-muted uppercase tracking-wider block">Official Validation</span>
             
-            <div class="space-y-2 border-b border-brand-border pb-4">
-              <p class="font-serif text-lg italic text-brand-muted leading-tight">Certificate of Appreciation</p>
-              <h5 class="font-bold text-sm text-brand-dark leading-tight tracking-tight uppercase">Silver Volunteer Award</h5>
-            </div>
-
-            <div class="space-y-2">
-              <p class="text-[9px] uppercase tracking-wider text-brand-muted">Presented to:</p>
-              <p class="font-serif text-xl font-normal text-brand-dark leading-tight italic">Community of Voices</p>
-            </div>
-
-            <div class="space-y-1 pt-2">
-              <p class="text-[9px] uppercase tracking-wider text-brand-muted">For outstanding service:</p>
-              <p class="text-[10px] text-brand-dark font-medium leading-relaxed">
-                100 - 299 Hours of Bilingual Scaffolding & Literacy Tutoring
-              </p>
-            </div>
-
-            <div class="pt-4 border-t border-brand-border flex justify-between text-[8px] font-mono text-brand-muted">
-              <span>Date: Jan 9, 2025</span>
-              <span>ID: CoV-2025-S</span>
+            <!-- Real Certificate Display -->
+            <div class="border border-brand-border bg-white p-2 rounded-xl shadow-sm relative overflow-hidden group">
+              <img src="images/work/volunteer_award_cert.png" alt="Hong Kong Volunteer Award 2025 Certificate" class="w-full h-auto rounded object-contain hover:scale-[1.02] transition-transform duration-300">
             </div>
           </div>
 
-          <div class="space-y-2 text-left">
-            <h5 class="text-xs font-semibold text-brand-dark uppercase tracking-wider font-mono">Bespoke Credentials</h5>
+          <div class="space-y-2 text-left pt-4 border-t border-brand-border/60">
+            <h5 class="text-xs font-semibold text-brand-dark uppercase tracking-wider font-mono">Verified Hour Logs</h5>
             <p class="text-[11px] text-brand-muted leading-relaxed font-light">
-              Verified by MS. Ng at local Methodist community centers, logging 100+ cumulative hours across Stamford, FIS, and WIS coalitions.
+              Official 2025 Hong Kong Volunteer Award (Silver Award, 100-299 hours of service) presented to Cheung Kyle Ying Long for exceptional community contribution and bilingual scaffolding impact.
             </p>
           </div>
         </div>
 
-      </div>
-
-      <!-- Structured Table of Service -->
-      <div class="bg-[#faf9f6] border border-brand-border rounded-2xl p-6 md:p-8">
-        <div class="border-b border-brand-border pb-4 mb-6">
-          <h4 class="text-xl font-normal font-serif text-brand-dark">The Table of Service</h4>
-          <p class="text-xs text-brand-muted mt-1 font-mono">Systematic Action Stages (CoV Program)</p>
-        </div>
-
-        <div class="overflow-x-auto no-scrollbar">
-          <table class="w-full text-left text-xs border-collapse">
-            <thead>
-              <tr class="border-b border-brand-border text-brand-dark uppercase tracking-wider font-mono text-[9px]">
-                <th class="pb-3 w-1/4">Stage</th>
-                <th class="pb-3 w-3/4">Scope of Activities</th>
-              </tr>
-            </thead>
-            <tbody class="divide-y divide-brand-border/60">
-              <tr>
-                <td class="py-4 font-semibold text-brand-dark">1. Inventory & Investigation</td>
-                <td class="py-4 font-light text-brand-muted leading-relaxed">Researching root causes, contacting Methodist and local center directors, establishing linguistic baselines.</td>
-              </tr>
-              <tr>
-                <td class="py-4 font-semibold text-brand-dark">2. Preparation & Planning</td>
-                <td class="py-4 font-light text-brand-muted leading-relaxed">Securing mentorship from Ms. Ng, building Cantonese-explanation sheets, recruiting international school peers.</td>
-              </tr>
-              <tr>
-                <td class="py-4 font-semibold text-brand-dark">3. Action</td>
-                <td class="py-4 font-light text-brand-muted leading-relaxed">Logging 100+ hours, coordinating WIS/Stamford tutor rotations, deploying 15 initial GoAsk licenses to single mother households.</td>
-              </tr>
-              <tr>
-                <td class="py-4 font-semibold text-brand-dark">4. Reflection</td>
-                <td class="py-4 font-light text-brand-muted leading-relaxed">Refining grammar scaffolding sheets, tracking student progress, monitoring GoAsk usage trends.</td>
-              </tr>
-              <tr>
-                <td class="py-4 font-semibold text-brand-dark">5. Demonstration</td>
-                <td class="py-4 font-light text-brand-muted leading-relaxed">Presenting CoV slides to high schools, formalizing our CUHK technology license grant, and receiving the Silver Volunteer Award.</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
       </div>
 
     </div>
@@ -590,7 +494,7 @@
 
           <div class="flex items-center justify-between pt-4 border-t border-brand-border">
             <p class="text-xs text-brand-muted font-mono">🔒 Secure encrypted TLS channel</p>
-            <button type="submit" class="px-6 py-3 text-xs font-semibold text-white bg-brand-green hover:bg-brand-dark rounded transition-all">
+            <button type="submit" id="submit-btn" class="px-6 py-3 text-xs font-semibold text-white bg-brand-green hover:bg-brand-dark rounded transition-all">
               Transmit Proposal
             </button>
           </div>
@@ -633,7 +537,14 @@
     </div>
   </footer>
 
+  <!-- InstantDB SDK -->
+  <script src="https://unpkg.com/@instantdb/core@latest/dist/instantdb.umd.js"></script>
   <script>
+    // Initialize InstantDB
+    const APP_ID = '3d183980-ff6d-4952-b883-7c3852d7e5b6';
+    const core = window.instantdb || window.idb || window.InstantDB;
+    const db = core.init({ appId: APP_ID });
+
     // Mock interactive data for GoAsk simulator
     const sims = {
       1: {
@@ -645,12 +556,12 @@
                 • <strong>Went to school</strong>（去返學）- 呢個係簡簡單單<strong>之後發生</strong>嘅事，所以用「簡單過去式」(V2)。`
       },
       2: {
-        prompt: 'The English lesson was thoroughly explained by the Wis tutor.',
+        prompt: 'The English lesson was thoroughly explained by the volunteer tutor.',
         output: `呢句用咗<strong>被動語態 (Passive Voice)</strong>，將接受動作嘅物件放喺前面：
                 <br><br>
                 • <strong>The English lesson was thoroughly explained</strong> - 英文堂被徹底地解釋（動作承受者 + be動詞 + 過去分詞）。
                 <br>
-                • <strong>by the Wis tutor</strong> - 由 WIS 導師進行（用 "by" 指明動作執行者）。`
+                • <strong>by the volunteer tutor</strong> - 由義工導師進行（用 "by" 指明動作執行者）。`
       }
     };
 
@@ -662,13 +573,18 @@
     }
 
     // Stateful form handling
-    function handleFormSubmit(event) {
+    async function handleFormSubmit(event) {
       event.preventDefault();
       
       const honeypot = document.getElementById('spam-check').value;
       if (honeypot) {
         return;
       }
+
+      const submitBtn = document.getElementById('submit-btn');
+      const originalText = submitBtn.textContent;
+      submitBtn.textContent = 'Transmitting...';
+      submitBtn.disabled = true;
 
       // Collect data
       const data = {
@@ -681,7 +597,23 @@
       };
 
       console.log('Logging Form Data:', data);
-      document.getElementById('success-overlay').classList.remove('hidden');
+
+      try {
+        const id = core.id();
+        await db.transact(
+          db.tx.cov_proposals[id].update({
+            ...data,
+            createdAt: Date.now()
+          })
+        );
+        document.getElementById('success-overlay').classList.remove('hidden');
+      } catch (err) {
+        console.error('Error saving to InstantDB:', err);
+        alert('An error occurred while saving your proposal. Please try again.');
+      } finally {
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+      }
     }
 
     function resetForm() {
