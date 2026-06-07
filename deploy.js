@@ -1,11 +1,11 @@
 const fs = require('fs');
 const path = require('path');
 
-const VERCEL_TOKEN = 'vca_0vEvF5UrPmXdiJ0BRVxOwxHrgqri4iRmkLcalHFEorwaMcAHxZ2XJrdL';
+const VERCEL_TOKEN = process.env.VERCEL_TOKEN || '';
 const PROJECT_NAME = 'goask-ngo';
 
 const dir = '/home/kyzl/goask-ngo-web';
-const fileNames = ['index.html', 'robots.txt', 'sitemap.xml', 'vercel.json'];
+const fileNames = ['index.html', 'robots.txt', 'sitemap.xml', 'vercel.json', 'analytics-dashboard.html', 'analytics-dashboard.png', 'google-analytics.html', 'google-analytics.png'];
 
 async function deploy() {
   try {
@@ -23,7 +23,7 @@ async function deploy() {
     console.log('Sending deployment request to Vercel API...');
     const body = {
       name: PROJECT_NAME,
-      target: 'production',
+      target: 'preview',
       files: files,
       projectSettings: {
         framework: null
