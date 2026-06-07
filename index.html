@@ -270,47 +270,76 @@
           </div>
         </div>
 
-        <!-- Interactive GoAsk Simulator mockup (Actual Work) -->
+        <!-- Interactive GoAsk Messaging Platform -->
         <div class="lg:col-span-6 relative flex justify-center w-full">
-          <div class="bg-white border border-brand-border p-6 rounded-2xl shadow-xl max-w-[400px] w-full relative">
-            <span class="text-[10px] font-mono text-brand-muted uppercase tracking-wider">Interactive GoAsk Scaffolding Simulator</span>
+          <div class="bg-white border border-brand-border rounded-2xl shadow-xl max-w-[400px] w-full relative overflow-hidden">
             
-            <div class="mt-4 bg-[#faf9f6] p-4 rounded-xl border border-brand-border space-y-4 min-h-[300px] flex flex-col justify-between">
-              <div class="space-y-3">
-                <div class="flex items-start space-x-2">
-                  <div class="w-6 h-6 rounded-full bg-brand-green/20 flex items-center justify-center font-bold text-[10px] text-brand-green">S</div>
-                  <div class="bg-white border border-brand-border p-2.5 rounded-lg text-[11px] text-brand-dark">
-                    <p class="font-mono text-[9px] text-brand-muted mb-0.5">English Sentence:</p>
-                    <p id="sim-prompt" class="font-medium text-brand-dark">She went to school after she had finished her breakfast.</p>
-                  </div>
-                </div>
+            <!-- Chat Header -->
+            <div class="bg-brand-green px-4 py-3 flex items-center space-x-3">
+              <div class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center font-bold text-sm text-white">G</div>
+              <div class="flex-1 min-w-0">
+                <p class="text-xs font-semibold text-white truncate">GoAsk Tutor</p>
+                <p class="text-[9px] text-white/70 font-mono">Online • Cantonese Scaffolding</p>
+              </div>
+              <div class="w-2 h-2 rounded-full bg-green-300 animate-pulse"></div>
+            </div>
 
-                <div class="flex items-start space-x-2 justify-end">
-                  <div class="bg-brand-green/10 border border-brand-green/20 p-2.5 rounded-lg text-[11px] text-brand-dark text-left max-w-[85%]">
-                    <p class="font-mono text-[9px] text-brand-green mb-0.5">Cantonese Explanation Scaffold:</p>
-                    <p id="sim-output" class="text-brand-dark leading-relaxed">
-                      呢句用咗兩個過去動作。
-                      <br>
-                      1. <strong>Had finished her breakfast</strong>（食完早餐）- 呢個動作<strong>最先發生</strong>，所以用「過去完成式」(Had + V3)。
-                      <br>
-                      2. <strong>Went to school</strong>（去返學）- 呢個係<strong>之後發生</strong>嘅事，所以用「簡單過去式」(V2)。
-                    </p>
-                  </div>
-                  <div class="w-6 h-6 rounded-full bg-brand-green/10 flex items-center justify-center font-bold text-[10px] text-brand-green">G</div>
+            <!-- Chat Messages -->
+            <div class="bg-[#faf9f6] p-4 min-h-[340px] flex flex-col space-y-3 overflow-y-auto" id="chat-messages">
+              
+              <!-- Tutor intro message -->
+              <div class="flex items-start space-x-2 max-w-[85%]">
+                <div class="w-6 h-6 rounded-full bg-brand-green flex items-center justify-center font-bold text-[9px] text-white shrink-0 mt-0.5">G</div>
+                <div class="bg-white border border-brand-border p-2.5 rounded-xl rounded-tl-sm text-[11px] text-brand-dark leading-relaxed">
+                  <p class="font-mono text-[9px] text-brand-green mb-0.5">GoAsk Tutor</p>
+                  <p>Send me an English sentence or pick a lesson below! I'll explain it in Cantonese.</p>
                 </div>
               </div>
 
-              <!-- Interactive Buttons -->
-              <div class="pt-3 border-t border-brand-border space-y-1.5">
-                <p class="text-[9px] font-mono text-brand-muted uppercase">Toggle Scaffolding Lessons:</p>
-                <div class="grid grid-cols-2 gap-2">
-                  <button onclick="changeSim(1)" class="px-2 py-1 bg-brand-cream hover:bg-brand-border border border-brand-border rounded text-[9px] text-brand-dark text-left font-mono">
-                    👉 Past vs Perfect
-                  </button>
-                  <button onclick="changeSim(2)" class="px-2 py-1 bg-brand-cream hover:bg-brand-border border border-brand-border rounded text-[9px] text-brand-dark text-left font-mono">
-                    👉 Passive Voice
-                  </button>
+              <!-- Student message -->
+              <div class="flex items-start space-x-2 max-w-[85%] self-end flex-row-reverse">
+                <div class="w-6 h-6 rounded-full bg-amber-500 flex items-center justify-center font-bold text-[9px] text-white shrink-0 mt-0.5">S</div>
+                <div class="bg-brand-green/10 border border-brand-green/20 p-2.5 rounded-xl rounded-tr-sm text-[11px] text-brand-dark">
+                  <p class="font-mono text-[9px] text-amber-600 mb-0.5">Student</p>
+                  <p id="sim-prompt" class="font-medium">She went to school after she had finished her breakfast.</p>
                 </div>
+              </div>
+
+              <!-- Tutor response -->
+              <div class="flex items-start space-x-2 max-w-[90%]">
+                <div class="w-6 h-6 rounded-full bg-brand-green flex items-center justify-center font-bold text-[9px] text-white shrink-0 mt-0.5">G</div>
+                <div class="bg-white border border-brand-border p-2.5 rounded-xl rounded-tl-sm text-[11px] text-brand-dark leading-relaxed shadow-sm">
+                  <p class="font-mono text-[9px] text-brand-green mb-1">Cantonese Explanation Scaffold:</p>
+                  <p id="sim-output" class="text-brand-dark leading-relaxed">
+                    呢句用咗兩個過去動作。
+                    <br><br>
+                    • <strong>Had finished her breakfast</strong>（食完早餐）- 呢個動作<strong>最先發生</strong>，所以用「過去完成式」(Had + V3)。
+                    <br><br>
+                    • <strong>Went to school</strong>（去返學）- 呢個係<strong>之後發生</strong>嘅事，所以用「簡單過去式」(V2)。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Typing indicator (hidden initially) -->
+            <div id="typing-indicator" class="hidden px-4 py-2 flex items-center space-x-2">
+              <div class="w-5 h-5 rounded-full bg-brand-green flex items-center justify-center font-bold text-[7px] text-white">G</div>
+              <div class="flex space-x-1">
+                <div class="w-1.5 h-1.5 rounded-full bg-brand-muted animate-bounce" style="animation-delay:0ms"></div>
+                <div class="w-1.5 h-1.5 rounded-full bg-brand-muted animate-bounce" style="animation-delay:150ms"></div>
+                <div class="w-1.5 h-1.5 rounded-full bg-brand-muted animate-bounce" style="animation-delay:300ms"></div>
+              </div>
+            </div>
+
+            <!-- Lesson Picker Bar -->
+            <div class="border-t border-brand-border p-3 bg-white">
+              <div class="flex gap-1.5">
+                <button onclick="changeSim(1)" class="flex-1 px-2.5 py-2 bg-brand-cream hover:bg-brand-green hover:text-white border border-brand-border hover:border-brand-green rounded-lg text-[9px] text-brand-dark font-mono font-medium transition-all duration-200 text-center">
+                  👉 Past vs Perfect
+                </button>
+                <button onclick="changeSim(2)" class="flex-1 px-2.5 py-2 bg-brand-cream hover:bg-brand-green hover:text-white border border-brand-border hover:border-brand-green rounded-lg text-[9px] text-brand-dark font-mono font-medium transition-all duration-200 text-center">
+                  👉 Passive Voice
+                </button>
               </div>
             </div>
 
@@ -576,8 +605,21 @@
 
     function changeSim(id) {
       if (sims[id]) {
-        document.getElementById('sim-prompt').innerText = sims[id].prompt;
-        document.getElementById('sim-output').innerHTML = sims[id].output;
+        const promptEl = document.getElementById('sim-prompt');
+        const outputEl = document.getElementById('sim-output');
+        const typingEl = document.getElementById('typing-indicator');
+        
+        // Show typing indicator, hide old response
+        typingEl.classList.remove('hidden');
+        outputEl.parentElement.parentElement.classList.add('opacity-40');
+        
+        // After a short typing delay, reveal the new explanation
+        setTimeout(() => {
+          promptEl.innerText = sims[id].prompt;
+          outputEl.innerHTML = sims[id].output;
+          typingEl.classList.add('hidden');
+          outputEl.parentElement.parentElement.classList.remove('opacity-40');
+        }, 1200);
       }
     }
 
