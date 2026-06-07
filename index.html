@@ -584,14 +584,14 @@
     const db = core.init({ appId: APP_ID });
 
     // Mock interactive data for GoAsk simulator
-    const sims = {
+    window.sims = {
       1: {
         prompt: 'She went to school after she had finished her breakfast.',
         output: `呢句用咗兩個過去動作。
                 <br><br>
                 • <strong>Had finished her breakfast</strong>（食完早餐）- 呢個動作<strong>最先發生</strong>，所以用「過去完成式」(Had + V3)。
-                <br>
-                • <strong>Went to school</strong>（去返學）- 呢個係簡簡單單<strong>之後發生</strong>嘅事，所以用「簡單過去式」(V2)。`
+                <br><br>
+                • <strong>Went to school</strong>（去返學）- 呢個係<strong>之後發生</strong>嘅事，所以用「簡單過去式」(V2)。`
       },
       2: {
         prompt: 'The English lesson was thoroughly explained by the volunteer tutor.',
@@ -603,25 +603,26 @@
       }
     };
 
-    function changeSim(id) {
-      if (sims[id]) {
+    window.changeSim = function(id) {
+      if (window.sims[id]) {
         const promptEl = document.getElementById('sim-prompt');
         const outputEl = document.getElementById('sim-output');
         const typingEl = document.getElementById('typing-indicator');
         
         // Show typing indicator, hide old response
         typingEl.classList.remove('hidden');
-        outputEl.parentElement.parentElement.classList.add('opacity-40');
+        const chatContainer = document.getElementById('chat-messages');
+        chatContainer.classList.add('opacity-40');
         
         // After a short typing delay, reveal the new explanation
         setTimeout(() => {
-          promptEl.innerText = sims[id].prompt;
-          outputEl.innerHTML = sims[id].output;
+          promptEl.innerText = window.sims[id].prompt;
+          outputEl.innerHTML = window.sims[id].output;
           typingEl.classList.add('hidden');
-          outputEl.parentElement.parentElement.classList.remove('opacity-40');
+          chatContainer.classList.remove('opacity-40');
         }, 1200);
       }
-    }
+    };
 
     // Stateful form handling
     async function handleFormSubmit(event) {
