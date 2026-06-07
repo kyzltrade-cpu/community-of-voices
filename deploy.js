@@ -5,7 +5,7 @@ const VERCEL_TOKEN = process.env.VERCEL_TOKEN || '';
 const PROJECT_NAME = 'goask-ngo';
 
 const dir = '/home/kyzl/goask-ngo-web';
-const fileNames = ['index.html', 'robots.txt', 'sitemap.xml', 'vercel.json', 'analytics-dashboard.html', 'analytics-dashboard.png', 'google-analytics.html', 'google-analytics.png'];
+const fileNames = ['index.html', 'robots.txt', 'sitemap.xml', 'vercel.json', 'google-analytics.html', 'google-analytics.png'];
 
 async function deploy() {
   try {
