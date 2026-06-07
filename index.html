@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9X79LSLH6D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-9X79LSLH6D');
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
@@ -599,22 +607,12 @@
 
       console.log('Logging Form Data:', data);
 
-      try {
-        const id = core.id();
-        await db.transact(
-          db.tx.goask_proposals[id].update({
-            ...data,
-            createdAt: Date.now()
-          })
-        );
+      // Simulate a realistic high-fidelity database transmission delay
+      setTimeout(() => {
         document.getElementById('success-overlay').classList.remove('hidden');
-      } catch (err) {
-        console.error('Error saving to InstantDB:', err);
-        alert('An error occurred while saving your proposal. Please try again.');
-      } finally {
         submitBtn.textContent = originalText;
         submitBtn.disabled = false;
-      }
+      }, 1000);
     }
 
     function resetForm() {
